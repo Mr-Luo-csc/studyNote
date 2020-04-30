@@ -6,3 +6,5 @@ springboot结合redisson实现分布式锁
 
 分布式事务
 2pc 3pc mq tcc seata
+
+are you ready!! God roading——java
