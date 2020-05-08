@@ -23,4 +23,5 @@ git add .
 git commit -m '提交本地代码并且获取最新代码'
 //注释：获取源dev分支最新代码
 git pull origin dev
-//注释：如有冲突就解决冲突
+
+本地配置两个git使用
