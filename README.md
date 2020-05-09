@@ -35,3 +35,9 @@ runnng always!!!
 Amazing!!!
 
 # Csc motherfucker~~~
+
+**问题**：使用Git将本地库commit后push到GitHub上，Github日志上没有显示contribution。
+
+**可能原因**：github上没有设置电子邮箱，或者是Git没有配置邮箱email。
+
+**解决办法**：github设置邮箱—>settings—>emalis.
