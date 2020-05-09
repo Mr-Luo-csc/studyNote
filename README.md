@@ -25,3 +25,5 @@ git commit -m '提交本地代码并且获取最新代码'
 git pull origin dev
 
 本地配置两个git使用
+
+Sleep out you know ?!
