@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jmm&amp;jvm/jmm&amp;jvm.iml" filepath="$PROJECT_DIR$/jmm&amp;jvm/jmm&amp;jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volatile/volatile.iml" filepath="$PROJECT_DIR$/volatile/volatile.iml" />
     </modules>
   </component>
 </project>
