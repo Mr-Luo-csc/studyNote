@@ -27,3 +27,5 @@ git pull origin dev
 本地配置两个git使用
 
 Sleep out you know ?!
+
+runnng always!!!
