@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jmm&amp;jvm/jmm&amp;jvm.iml" filepath="$PROJECT_DIR$/jmm&amp;jvm/jmm&amp;jvm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/volatile/volatile.iml" filepath="$PROJECT_DIR$/volatile/volatile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_cas&amp;aqs/csc_cas&amp;aqs.iml" filepath="$PROJECT_DIR$/csc_cas&amp;aqs/csc_cas&amp;aqs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_dcl/csc_dcl.iml" filepath="$PROJECT_DIR$/csc_dcl/csc_dcl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_jmm&amp;jvm/csc_jmm&amp;jvm.iml" filepath="$PROJECT_DIR$/csc_jmm&amp;jvm/csc_jmm&amp;jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_volatile/csc_volatile.iml" filepath="$PROJECT_DIR$/csc_volatile/csc_volatile.iml" />
     </modules>
   </component>
 </project>
