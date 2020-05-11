@@ -9,14 +9,20 @@ package csc.lzp;
  * @Author: luozhipeng
  **/
 public class HolderDemo {
-    public HolderDemo() {
+    /**
+     * 私有化实例方法
+     */
+    private HolderDemo() {
     }
 
 
     private static class Holder {
-        private static HolderDemo holderDemo = new HolderDemo();
+        private static final HolderDemo holderDemo = new HolderDemo();
     }
 
+    /**
+     * 内部类方式获取单例
+     */
     public static HolderDemo getInstance() {
         return Holder.holderDemo;
     }
