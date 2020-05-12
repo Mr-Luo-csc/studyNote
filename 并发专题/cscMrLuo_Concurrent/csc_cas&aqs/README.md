@@ -9,3 +9,7 @@ JUC Java并发包
 CompareAndSet / CompareAndSwap 比较和交换 Java体系结构 指令 一种无锁的原子算法 一种乐观锁
 
 CAS(V,E,N)V代表拿到的值 E代表预期的值 N代表修改之后的值
+
+CAS 无锁
+
+AQS 实现自己的锁
