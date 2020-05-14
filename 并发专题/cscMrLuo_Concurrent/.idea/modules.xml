@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/csc_collection/csc_collection.iml" filepath="$PROJECT_DIR$/csc_collection/csc_collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc_dcl/csc_dcl.iml" filepath="$PROJECT_DIR$/csc_dcl/csc_dcl.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc_jmm&amp;jvm/csc_jmm&amp;jvm.iml" filepath="$PROJECT_DIR$/csc_jmm&amp;jvm/csc_jmm&amp;jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_threadpool/csc_threadpool.iml" filepath="$PROJECT_DIR$/csc_threadpool/csc_threadpool.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc_volatile/csc_volatile.iml" filepath="$PROJECT_DIR$/csc_volatile/csc_volatile.iml" />
     </modules>
   </component>
