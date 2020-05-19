@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa01f23a-3118-4d5f-9e20-4519bc08f0b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/cscMrLuo_Concurrent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../框架运用与源码解析/cscMrLuo_FrameworkCode/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../框架运用与源码解析/cscMrLuo_FrameworkCode/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../框架运用与源码解析/cscMrLuo_FrameworkCode/csc_springIOC/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aa01f23a-3118-4d5f-9e20-4519bc08f0b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +57,7 @@
       <updated>1589813541172</updated>
       <workItem from="1589813542759" duration="127000" />
       <workItem from="1589850584417" duration="38000" />
+      <workItem from="1589884765986" duration="12000" />
     </task>
     <servers />
   </component>
