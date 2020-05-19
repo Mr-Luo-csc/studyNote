@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/框架运用与源码解析.iml" filepath="$PROJECT_DIR$/.idea/框架运用与源码解析.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_springIOC/csc_springIOC.iml" filepath="$PROJECT_DIR$/csc_springIOC/csc_springIOC.iml" />
     </modules>
   </component>
 </project>
