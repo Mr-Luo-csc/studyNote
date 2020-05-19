@@ -44,3 +44,5 @@ Amazing!!!
 第三种模型，即只要Master确认收到消息就算投递成功；实际使用时，根据应用特性选择，绝大多数情况下都会中和可靠性和性能选择第三种模型
 
 Time management/时间管理
+
+SUP Forever
