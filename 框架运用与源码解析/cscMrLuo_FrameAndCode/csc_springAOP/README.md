@@ -1,6 +1,6 @@
-Spring AOP的使用
+# Spring AOP的使用
 
-关键字的含义:
+# 关键字的含义:
  - 连接点
  - 切点
  - 目标对象
@@ -13,7 +13,7 @@ Spring AOP的使用
 
 环绕通知: 主要是用来改变参数的
 
-什么时候使用Spring aop或者aspectJ？
+#什么时候使用Spring aop或者aspectJ？
  - Spring aop是动态的 理解: 在程序运行时来实现的
  - aspectJ是静态的 理解: 在程序编译的时候就已经定义好了
 
