@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/csc_springIOC/pom.xml" />
         <option value="$PROJECT_DIR$/csc_springAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/csc_JDKProxy/pom.xml" />
       </list>
     </option>
   </component>
