@@ -14,3 +14,9 @@
 - JDK和ASM都是操作byte[]字节码,将byte[]字节码转换成一个代理对象的
 - 在JVM中操作的其实是classLoader加载Class之后生成的byte[]字节码,byte[]转换成一个实例对象的过程
 - JDK动态代理,底层使用的API是native本地方法栈当中的,底层是用c、c++来实现的
+
+`Java字节码编译框架 ASM`
+
+自己定义通过URLClassLoader来实现的动态代理,有IO操作,非常消耗性能
+
+例如:redis使用多路复用的思想进行非阻塞的IO,保证了redis的高效性
