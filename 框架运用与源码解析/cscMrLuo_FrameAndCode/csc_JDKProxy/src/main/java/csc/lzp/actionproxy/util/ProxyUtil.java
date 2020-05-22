@@ -1,4 +1,4 @@
-package csc.lzp.util;
+package csc.lzp.actionproxy.util;
 
 /**
  * @Discription: 动态代理工具类
@@ -7,8 +7,4 @@ package csc.lzp.util;
  * @Author: luozhipeng
  **/
 public class ProxyUtil {
-
-    public static void main(String[] args) {
-
-    }
 }

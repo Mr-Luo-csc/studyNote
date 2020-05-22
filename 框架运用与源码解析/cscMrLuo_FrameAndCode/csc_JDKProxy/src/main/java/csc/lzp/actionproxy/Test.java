@@ -1,4 +1,4 @@
-package csc.lzp.staticproxy.inherit;
+package csc.lzp.actionproxy;
 
 import csc.lzp.staticproxy.inherit.dao.Impl.MrLuoDaoImpl;
 import csc.lzp.staticproxy.inherit.dao.MrLuoDao;
