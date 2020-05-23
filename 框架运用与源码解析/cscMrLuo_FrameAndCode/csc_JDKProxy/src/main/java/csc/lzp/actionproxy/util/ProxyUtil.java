@@ -7,4 +7,12 @@ package csc.lzp.actionproxy.util;
  * @Author: luozhipeng
  **/
 public class ProxyUtil {
+
+    /**编写一个创建实例的公共静态方法**/
+    public static Object newInstance(Class targetObject) {
+
+        targetObject.getSimpleName();
+
+        return null;
+    }
 }

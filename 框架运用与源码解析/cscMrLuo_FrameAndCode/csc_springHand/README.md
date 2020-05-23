@@ -1,0 +1,9 @@
+#手写模拟一个springIOC
+
+- 使用dom4j解析xml文件的形式,获取里面的bean,然后通过编码的方式实现bean之间的依赖关系
+- 构造方法注入、setter注入、自动注入
+
+**自动注入(包括以下三种方式)**
+- @Autowired注解——由spring提供
+- @Resource注解——由JSR-250提供
+- @Inject注解——由JSR-330提供

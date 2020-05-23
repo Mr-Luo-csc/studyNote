@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="csc_springIOC" />
         <module name="csc_springAOP" />
+        <module name="csc_springHand" />
         <module name="csc_JDKProxy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="csc_JDKProxy" target="1.5" />
       <module name="csc_springAOP" target="1.5" />
+      <module name="csc_springHand" target="1.5" />
       <module name="csc_springIOC" target="1.5" />
     </bytecodeTargetLevel>
   </component>
