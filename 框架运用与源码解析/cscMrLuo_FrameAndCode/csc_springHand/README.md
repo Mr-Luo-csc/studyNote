@@ -7,3 +7,5 @@
 - @Autowired注解——由spring提供
 - @Resource注解——由JSR-250提供
 - @Inject注解——由JSR-330提供
+
+绑定远程的GitHub账号
