@@ -54,7 +54,7 @@ public class BeanFactory {
                 for (Iterator<Element> itSecond = rootElement.elementIterator(); itSecond.hasNext(); ) {
 
                     Element elementSecondChild = itSecond.next();
-                    if (elementSecondChild.getName().equals("property")) {
+                    if (elementSecondChild.getName().equals("property")) {//setter注入的方式
 
                         String refValue = elementSecondChild.attribute("ref").getValue();
                         Object target = map.get(refValue);
@@ -63,6 +63,10 @@ public class BeanFactory {
                         Field field = clazz.getDeclaredField(nameValue);
                         field.setAccessible(true);
                         field.set(object, target);
+                    } else if (false) {//构造函数注入的方式
+
+                    } else {
+                        System.out.println("你的配置文件不符合要求");
                     }
                 }
                 map.put(beanName, object);
