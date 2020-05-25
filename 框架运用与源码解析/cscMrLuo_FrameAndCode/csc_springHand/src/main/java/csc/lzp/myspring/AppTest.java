@@ -3,6 +3,8 @@ package csc.lzp.myspring;
 
 import csc.lzp.myspring.util.BeanFactory;
 
+import java.io.UnsupportedEncodingException;
+
 /**
  * @Discription: 测试手写模拟的一个spring
  * @Author: luozhipeng
@@ -11,9 +13,9 @@ import csc.lzp.myspring.util.BeanFactory;
 public class AppTest {
 
     public static void main(String[] args) {
-        BeanFactory beanFactory = new BeanFactory("spring.xml");
-        beanFactory.getBean("userService");
-        System.out.println("配置文件的输出位置: " + new AppTest().getPath());
+        BeanFactory beanFactory = new BeanFactory(new AppTest().getPath());
+        System.out.println(beanFactory.getBean("userService"));
+        //System.out.println("配置文件的输出位置: " + new AppTest().getPath());
     }
 
     /**
@@ -22,6 +24,12 @@ public class AppTest {
      * @return
      */
     public String getPath() {
-        return this.getClass().getResource("/").getPath();
+        String path = this.getClass().getResource("/").getPath() + "spring.xml";
+        try {
+            path = java.net.URLDecoder.decode(path, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return path;
     }
 }

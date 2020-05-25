@@ -27,7 +27,7 @@ public class BeanFactory {
      * @param xml spring.xml的配置文件
      */
     public void parseXml(String xml) {
-        File file = new File(this.getClass().getResource("/").getPath() + "//" + xml);
+        File file = new File(xml);
         SAXReader reader = new SAXReader();
 
         Document doc = null;

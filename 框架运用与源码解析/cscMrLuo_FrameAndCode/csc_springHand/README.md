@@ -15,6 +15,8 @@ GitLab的自动部署
 注入bean优先级的问题
 - spring当中 手动装配的优先级高于自动装配?
 
+**beanFactory与factoryBean的区别**
+
 逻辑一定要屡一遍才开始写代码🆗
 
-# 了解以下每日U货的app端的需求
+### 了解以下每日U货的app端的需求
