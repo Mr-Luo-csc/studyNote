@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/csc_JDKProxy/csc_JDKProxy.iml" filepath="$PROJECT_DIR$/csc_JDKProxy/csc_JDKProxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc_springAOP/csc_springAOP.iml" filepath="$PROJECT_DIR$/csc_springAOP/csc_springAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc_springCode/csc_springCode.iml" filepath="$PROJECT_DIR$/csc_springCode/csc_springCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc_springHand/csc_springHand.iml" filepath="$PROJECT_DIR$/csc_springHand/csc_springHand.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc_springIOC/csc_springIOC.iml" filepath="$PROJECT_DIR$/csc_springIOC/csc_springIOC.iml" />
     </modules>
