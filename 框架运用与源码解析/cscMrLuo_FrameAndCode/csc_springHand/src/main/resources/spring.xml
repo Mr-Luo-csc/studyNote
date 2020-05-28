@@ -6,7 +6,10 @@
     <bean id="userDao" class="csc.lzp.myspring.dao.UserDao"></bean>
 
     <bean id="userService" class="csc.lzp.myspring.service.Impl.UserServiceImpl">
-        <property name="userDao" ref="userDao"/>
+<!--        -->
+        <!--        <property name="userDao" ref="userDao"/>-->
+<!--        -->
+        <!--        <constructor-arg></constructor-arg>-->
     </bean>
 
 </beans>

@@ -8,5 +8,8 @@ import org.springframework.stereotype.Repository;
  * @Date: 2020/5/25
  **/
 @Repository
-public class UserDao {
+public interface UserDao {
+
+    void query();
+
 }
