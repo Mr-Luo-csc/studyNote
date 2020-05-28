@@ -22,3 +22,5 @@ GitLab的自动部署
 ### 了解以下每日U货的app端的需求
 
 **数据结构就是用来描述数据的**
+
+**beanFactory  &  factoryBean**
