@@ -45,7 +45,7 @@ public class BeanFactory {
             }
 
             //List<Element> allChild = rootElement.elements();
-            for (Iterator<Element> itFirst = rootElement.elementIterator(); itFirst.hasNext(); ) {
+            for (Iterator<Element> itFirst = rootElement.elementIterator(); itFirst.hasNext(); ) {//遍历<beans>中的<bean>
                 //实例化对象
                 Element elementFirstChild = itFirst.next();
                 //id属性
@@ -61,7 +61,7 @@ public class BeanFactory {
                 //维护依赖关系
                 //看这个对象有没有依赖,判断是否有属性
 
-                for (Iterator<Element> itSecond = rootElement.elementIterator(); itSecond.hasNext(); ) {
+                for (Iterator<Element> itSecond = rootElement.elementIterator(); itSecond.hasNext(); ) {//遍历<bean>中的<property>或<constructor-arg>
 
                     Element elementSecondChild = itSecond.next();
                     if (elementSecondChild.getName().equals("property")) {//setter注入的方式,没有特殊的构造方法
