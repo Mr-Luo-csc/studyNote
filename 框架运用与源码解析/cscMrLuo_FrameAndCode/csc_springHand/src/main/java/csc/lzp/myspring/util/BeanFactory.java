@@ -73,7 +73,7 @@ public class BeanFactory {
                         String nameValue = elementSecondChild.attribute("name").getValue();
 
                         Field field = clazz.getDeclaredField(nameValue);
-                        //如果field == null 抛出一个自定义异常
+                        //如果field == null 抛出一个自定义异常        看类中是否有依赖关系
 
                         field.setAccessible(true);
                         field.set(object, target);
@@ -85,7 +85,7 @@ public class BeanFactory {
                         Constructor constructor = clazz.getConstructor(injectObjectClazz.getInterfaces()[0]);
                         object = constructor.newInstance(injectObject);
                     } else {
-                        System.out.println("你的配置文件不符合要求,标签错误");
+                        System.out.println("xml中的标签与实际不符合");
                     }
                 }
 
