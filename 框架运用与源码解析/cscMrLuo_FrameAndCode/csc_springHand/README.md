@@ -24,3 +24,11 @@ GitLab的自动部署
 **数据结构就是用来描述数据的**
 
 **beanFactory  &  factoryBean**
+
+- xml 声明和扫描
+- 注解 只是声明 没有扫描
+- register() 加了javaConfig的bean,在config类上加scan 普通的bean直接加单个的bean,例如xxService.class
+- refresh()
+- @profile() 先实例化 然后再设置条件
+
+**spring中是使用 AnnotatedGenericDefinition类来存bean的完整信息的 相当与一个数据结构**
