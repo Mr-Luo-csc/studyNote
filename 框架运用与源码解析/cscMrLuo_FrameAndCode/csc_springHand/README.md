@@ -27,7 +27,7 @@ GitLab的自动部署
 
 - xml 声明和扫描
 - 注解 只是声明 没有扫描
-- register() 加了javaConfig的bean,在config类上加scan 普通的bean直接加单个的bean,例如xxService.class
+- register() 1、加了javaConfig的bean,在config类上加scan;2、普通的bean直接加单个的bean,例如xxService.class;3、传一个包名的字符串
 - refresh()
 - @profile() 先实例化 然后再设置条件
 
