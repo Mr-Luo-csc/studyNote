@@ -1,7 +1,7 @@
-package csc.lzp.myspring;
+package csc.lzp.xmlspring;
 
 
-import csc.lzp.myspring.util.BeanFactory;
+import csc.lzp.xmlspring.util.BeanFactory;
 
 import java.io.UnsupportedEncodingException;
 

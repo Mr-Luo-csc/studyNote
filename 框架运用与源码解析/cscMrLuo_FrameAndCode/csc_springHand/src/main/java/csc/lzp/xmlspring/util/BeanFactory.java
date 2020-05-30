@@ -1,6 +1,6 @@
-package csc.lzp.myspring.util;
+package csc.lzp.xmlspring.util;
 
-import csc.lzp.myspring.exception.MyException;
+import csc.lzp.xmlspring.exception.MyException;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;

@@ -1,6 +1,6 @@
-package csc.lzp.myspring.dao.Impl;
+package csc.lzp.xmlspring.dao.Impl;
 
-import csc.lzp.myspring.dao.UserDao;
+import csc.lzp.xmlspring.dao.UserDao;
 
 /**
  * @Discription:

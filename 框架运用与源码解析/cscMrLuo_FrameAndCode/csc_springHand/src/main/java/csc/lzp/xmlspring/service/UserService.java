@@ -1,4 +1,4 @@
-package csc.lzp.myspring.service;
+package csc.lzp.xmlspring.service;
 
 /**
  * @Discription:

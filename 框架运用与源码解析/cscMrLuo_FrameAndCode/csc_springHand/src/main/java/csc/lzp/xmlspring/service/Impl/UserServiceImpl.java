@@ -1,7 +1,7 @@
-package csc.lzp.myspring.service.Impl;
+package csc.lzp.xmlspring.service.Impl;
 
-import csc.lzp.myspring.dao.UserDao;
-import csc.lzp.myspring.service.UserService;
+import csc.lzp.xmlspring.dao.UserDao;
+import csc.lzp.xmlspring.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**

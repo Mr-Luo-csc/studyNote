@@ -1,4 +1,4 @@
-package csc.lzp.myspring.exception;
+package csc.lzp.xmlspring.exception;
 
 /**
  * @Discription:

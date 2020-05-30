@@ -1,4 +1,4 @@
-package csc.lzp.myspring.dao;
+package csc.lzp.xmlspring.dao;
 
 import org.springframework.stereotype.Repository;
 
