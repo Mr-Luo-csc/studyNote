@@ -51,7 +51,7 @@ public class BeanFactory {
 
             Attribute attribute = rootElement.attribute("default-autowire");//是否是自动装配
             boolean flag = false;
-            if (attribute == null) {
+            if (attribute != null) {//这里不为空的话,才表示bean是自动注入的模式
                 flag = true;
             }
 
