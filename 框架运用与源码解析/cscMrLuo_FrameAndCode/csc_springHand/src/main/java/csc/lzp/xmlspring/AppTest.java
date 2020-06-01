@@ -14,7 +14,7 @@ public class AppTest {
 
     public static void main(String[] args) {
         BeanFactory beanFactory = new BeanFactory(new AppTest().getPath());
-        System.out.println(beanFactory.getBean("userService"));
+        System.out.println("bean: " + beanFactory.getBean("service"));
         //System.out.println("配置文件的输出位置: " + new AppTest().getPath());
     }
 
@@ -24,7 +24,7 @@ public class AppTest {
      * @return
      */
     public String getPath() {
-        String path = this.getClass().getResource("/").getPath() + "spring.xml";
+        String path = this.getClass().getResource("/").getPath() + "spring2.xml";
         try {
             path = java.net.URLDecoder.decode(path, "UTF-8");
         } catch (UnsupportedEncodingException e) {

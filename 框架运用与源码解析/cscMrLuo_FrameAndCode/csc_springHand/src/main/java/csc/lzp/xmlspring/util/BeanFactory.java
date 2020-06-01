@@ -26,6 +26,17 @@ public class BeanFactory {
         parseXml(xml);
     }
 
+    public static void main(String[] args) throws Exception {
+        /**测试一下,自动注入的类型**/
+        String xml = "/Users/luozhipeng/Desktop/studyNote/框架运用与源码解析/cscMrLuo_FrameAndCode/csc_springHand/target/classes/spring2.xml";
+        File file = new File(xml);
+        SAXReader reader = new SAXReader();
+        Document document = reader.read(file);
+        Element rootElement = document.getRootElement();
+        Attribute attribute = rootElement.attribute("default-autowire");
+        System.out.println("自动注入是什么类型: " + attribute.getValue());
+    }
+
     /**
      * @param xml spring.xml的配置文件
      */
@@ -132,7 +143,7 @@ public class BeanFactory {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(map);
+        System.out.println("map: " + map);
     }
 
     /**
