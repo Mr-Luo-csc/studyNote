@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 public class MyPostProcessor implements BeanFactoryPostProcessor {
 
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
+        //实现你自己所需定义的bean类型
         BeanDefinition bd = beanFactory.getBeanDefinition("myService");
         bd.setScope("prototype");
     }

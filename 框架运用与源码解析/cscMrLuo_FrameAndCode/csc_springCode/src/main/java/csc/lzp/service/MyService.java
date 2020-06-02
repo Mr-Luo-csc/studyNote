@@ -1,5 +1,6 @@
 package csc.lzp.service;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
  * @Date: 2020/5/28
  **/
 @Service
+@Scope(value = "singleton")
 public class MyService {
 
     public MyService() {
