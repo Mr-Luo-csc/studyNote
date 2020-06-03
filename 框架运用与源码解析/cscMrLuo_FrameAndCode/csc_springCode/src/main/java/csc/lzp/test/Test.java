@@ -1,6 +1,7 @@
 package csc.lzp.test;
 
 import csc.lzp.config.MyConfig;
+import csc.lzp.dealtool.MyPostProcessor;
 import csc.lzp.service.MyService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -14,6 +15,10 @@ public class Test {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(MyConfig.class);
+
+        //添加自定义的beanFactoryPostProcessor
+        context.addBeanFactoryPostProcessor(new MyPostProcessor());
+
         context.refresh();
 
         Object myService = context.getBean(MyService.class);
