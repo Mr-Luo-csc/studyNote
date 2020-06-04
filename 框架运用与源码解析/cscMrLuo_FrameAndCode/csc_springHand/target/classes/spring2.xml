@@ -6,7 +6,7 @@
 
     <!--根据类型注入,与名字没有关系-->
     <bean id="dao1" class="csc.lzp.xmlspring.dao.Impl.UserDaoImpl1"></bean>
-        <bean id="dao2" class="csc.lzp.xmlspring.dao.Impl.UserDaoImpl2"></bean>
+    <!--    <bean id="dao2" class="csc.lzp.xmlspring.dao.Impl.UserDaoImpl2"></bean>-->
 
     <!--自动注入的话,找到了两个bean-->
     <bean id="service" class="csc.lzp.xmlspring.service.Impl.UserServiceImpl"></bean>
