@@ -18,7 +18,7 @@ public class CardService {
     CardDao cardDao;
 
     public void list() {
-        System.out.println(cardDao.list("10086"));
+        System.out.println(cardDao.list("key_l"));
     }
 
 

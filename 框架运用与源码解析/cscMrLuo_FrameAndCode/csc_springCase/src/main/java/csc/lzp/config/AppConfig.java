@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  * @Date: 2020/6/16
  **/
 @Configurable
-@ComponentScan("csc.lzp")
+@ComponentScan("csc.lzp.service")
 @Import(MyImportBeanDefinitionRegistrar.class)
 //@MapperScan("csc.lzp")
 public class AppConfig {

@@ -18,9 +18,10 @@ public class Test {
         //1、转对象
         //2、实现 CardDao
         //3、放入spring bean中
-        CardDao dao = (CardDao) Proxy.newProxyInstance(Test.class.getClassLoader(), new Class[]{CardDao.class}, new MyInvocationHandler());
-        dao.list("111");
+        //CardDao dao = (CardDao) Proxy.newProxyInstance(Test.class.getClassLoader(), new Class[]{CardDao.class}, new MyInvocationHandler());
+        //dao.list("111");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.getBean(CardService.class).list();
+        CardService cardService = (CardService) context.getBean("cardService");
+        cardService.list();
     }
 }
