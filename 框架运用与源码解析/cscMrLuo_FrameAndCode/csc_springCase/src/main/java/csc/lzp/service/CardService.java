@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 public class CardService {
 
     @Autowired
-    CardDao cardDao;
+    private CardDao cardDao;
 
     public void list() {
         System.out.println(cardDao.list("key_l"));

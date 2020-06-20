@@ -18,8 +18,8 @@ import javax.sql.DataSource;
  * @Date: 2020/6/16
  **/
 @Configurable
-@ComponentScan("csc.lzp.service")
-@Import(MyImportBeanDefinitionRegistrar.class)
+@ComponentScan(basePackages = {"csc.lzp.service", "csc.lzp.dao"})
+//@Import(MyImportBeanDefinitionRegistrar.class)
 //@MapperScan("csc.lzp")
 public class AppConfig {
 
@@ -37,7 +37,7 @@ public class AppConfig {
         driverManagerDataSource.setUsername("root");
         driverManagerDataSource.setPassword("admin123");
         driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/test");
-        driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return driverManagerDataSource;
     }
 }
