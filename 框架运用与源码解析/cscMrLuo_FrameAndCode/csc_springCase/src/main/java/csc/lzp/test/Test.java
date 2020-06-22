@@ -4,6 +4,7 @@ import csc.lzp.config.AppConfig;
 import csc.lzp.handler.MyInvocationHandler;
 import csc.lzp.dao.CardDao;
 import csc.lzp.service.CardService;
+import csc.lzp.service.GoodService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.lang.reflect.Proxy;
@@ -22,11 +23,14 @@ public class Test {
         //CardDao dao = (CardDao) Proxy.newProxyInstance(Test.class.getClassLoader(), new Class[]{CardDao.class}, new MyInvocationHandler());
         //dao.list("111");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        CardService cardService = context.getBean(CardService.class);
-        System.out.println("cardService是否存在: " + cardService);
+//        CardService cardService = context.getBean(CardService.class);
+//        System.out.println("cardService是否存在: " + cardService);
         CardDao cardDao = context.getBean(CardDao.class);
         System.out.println("cardDao是否存在: " + cardDao);
 
-        cardService.list();
+        GoodService goodService = context.getBean(GoodService.class);
+        System.out.println("goodService是否存在: " + goodService);
+
+//        cardService.list();
     }
 }

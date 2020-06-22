@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 @Configurable
 @ComponentScan(basePackages = {"csc.lzp.service", "csc.lzp.dao"})
 //@Import(MyImportBeanDefinitionRegistrar.class)
-//@MapperScan("csc.lzp")
+@MapperScan("csc.lzp.dao")
 public class AppConfig {
 
     @Bean
