@@ -23,15 +23,15 @@ public class Test {
         //CardDao dao = (CardDao) Proxy.newProxyInstance(Test.class.getClassLoader(), new Class[]{CardDao.class}, new MyInvocationHandler());
         //dao.list("111");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-//        CardService cardService = context.getBean(CardService.class);
-//        System.out.println("cardService是否存在: " + cardService);
-//        cardService.list();
-//
-//        CardDao cardDao = context.getBean(CardDao.class);
-//        System.out.println("cardDao是否存在: " + cardDao);
+        CardService cardService = context.getBean(CardService.class);
+        System.out.println("cardService是否存在: " + cardService);
+        cardService.list();
 
-        CityService cityService = context.getBean(CityService.class);
-        System.out.println("cityService是否存在: " + cityService);
-        cityService.list();
+        CardDao cardDao = context.getBean(CardDao.class);
+        System.out.println("cardDao是否存在: " + cardDao);
+
+//        CityService cityService = context.getBean(CityService.class);
+//        System.out.println("cityService是否存在: " + cityService);
+//        cityService.list();
     }
 }

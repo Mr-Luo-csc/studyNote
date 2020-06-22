@@ -23,40 +23,40 @@ import javax.sql.DataSource;
 @MapperScan("csc.lzp.dao")
 public class AppConfig {
 
+    @Bean
+    @Autowired
+    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
+        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+        sqlSessionFactoryBean.setDataSource(dataSource);
+        return sqlSessionFactoryBean;
+    }
+
+    @Bean
+    public DataSource dataSource() {
+        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
+        driverManagerDataSource.setUsername("root");
+        driverManagerDataSource.setPassword("admin123");
+        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/test");
+        driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        return driverManagerDataSource;
+    }
+
 //    @Bean
 //    @Autowired
-//    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
-//        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-//        sqlSessionFactoryBean.setDataSource(dataSource);
-//        return sqlSessionFactoryBean;
+//    public SqlSessionFactoryBean sqlSessionFactoryBean2(DataSource dataSource2) {
+//        SqlSessionFactoryBean sqlSessionFactoryBean2 = new SqlSessionFactoryBean();
+//        sqlSessionFactoryBean2.setDataSource(dataSource2);
+//        return sqlSessionFactoryBean2;
 //    }
 //
 //    @Bean
-//    public DataSource dataSource() {
-//        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-//        driverManagerDataSource.setUsername("root");
-//        driverManagerDataSource.setPassword("admin123");
-//        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/test");
-//        driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        return driverManagerDataSource;
+//    public DataSource dataSource2() {
+//        DriverManagerDataSource driverManagerDataSource2 = new DriverManagerDataSource();
+//        driverManagerDataSource2.setUsername("postgres");
+//        driverManagerDataSource2.setPassword("root");
+//        driverManagerDataSource2.setUrl("jdbc:postgresql://localhost:5432/test");
+//        driverManagerDataSource2.setDriverClassName("org.postgresql.Driver");
+//        return driverManagerDataSource2;
 //    }
-
-    @Bean
-    @Autowired
-    public SqlSessionFactoryBean sqlSessionFactoryBean2(DataSource dataSource2) {
-        SqlSessionFactoryBean sqlSessionFactoryBean2 = new SqlSessionFactoryBean();
-        sqlSessionFactoryBean2.setDataSource(dataSource2);
-        return sqlSessionFactoryBean2;
-    }
-
-    @Bean
-    public DataSource dataSource2() {
-        DriverManagerDataSource driverManagerDataSource2 = new DriverManagerDataSource();
-        driverManagerDataSource2.setUsername("postgres");
-        driverManagerDataSource2.setPassword("root");
-        driverManagerDataSource2.setUrl("jdbc:postgresql://localhost:5432/test");
-        driverManagerDataSource2.setDriverClassName("org.postgresql.Driver");
-        return driverManagerDataSource2;
-    }
 
 }
