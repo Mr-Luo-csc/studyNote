@@ -1,5 +1,6 @@
 package csc.lzp.myimport;
 
+import csc.lzp.dao.IndexDao2;
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
 
@@ -11,7 +12,11 @@ import org.springframework.core.type.AnnotationMetadata;
 public class MyImportSelector implements ImportSelector {
 
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
-        return new String[0];
+
+        //判断是否加了@enableAop注解
+       // annotationMetadata.getMetaAnnotationTypes("");
+
+        return new String[]{IndexDao2.class.getName()};
     }
 
 }
