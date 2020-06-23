@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="csc_springAOP" />
         <module name="csc_JDKProxy" />
+        <module name="csc_springCaseAboutAop" />
         <module name="csc_springIOC" />
         <module name="csc_springCode" />
         <module name="csc_springCase" />
@@ -18,6 +19,7 @@
       <module name="csc_JDKProxy" target="1.5" />
       <module name="csc_springAOP" target="1.5" />
       <module name="csc_springCase" target="1.5" />
+      <module name="csc_springCaseAboutAop" target="1.5" />
       <module name="csc_springCode" target="1.5" />
       <module name="csc_springHand" target="1.5" />
       <module name="csc_springIOC" target="1.5" />
