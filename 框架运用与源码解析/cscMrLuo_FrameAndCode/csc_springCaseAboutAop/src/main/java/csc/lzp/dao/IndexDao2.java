@@ -7,7 +7,9 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import java.lang.reflect.Proxy;
 
 /**
- * @Discription: IndexDao2 类似于 AopBeanPost ==>CGLib
+ * @Discription: IndexDao2 类似于 AopBeanPost
+ * ==>CGLib
+ * ==>后置管理器
  * @Author: luozhipeng
  * @Date: 2020/6/24
  **/
