@@ -16,6 +16,11 @@ public class MyImportSelector implements ImportSelector {
         //判断是否加了@enableAop注解
         //annotationMetadata.getMetaAnnotationTypes("");
 
+//        Set<String> annotationTypes = annotationMetadata.getAnnotationTypes();//得到所有annotation的类名
+//        for (String annotationType : annotationTypes) {
+//            annotationMetadata.getMetaAnnotationTypes(annotationType);
+//        }
+
         return new String[]{IndexDao2.class.getName()};
     }
 
