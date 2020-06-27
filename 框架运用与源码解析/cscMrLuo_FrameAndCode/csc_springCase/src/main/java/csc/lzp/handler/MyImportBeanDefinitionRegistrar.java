@@ -30,6 +30,7 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
         BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(CardDao.class);//这里写死(实际是:扫描所有接口)
         //获取cardDao-bd
         GenericBeanDefinition beanDefinition = (GenericBeanDefinition) builder.getBeanDefinition();//bd (beanClass=CardDao.class|实际:[$Proxy01.class])
+        System.out.println(beanDefinition.getBeanClassName());
         //处理bd,添加构造方法(自动装配三种方式:1、byName;2、byType;3、byC(构造方法))
         beanDefinition.getConstructorArgumentValues().addGenericArgumentValue("csc.lzp.dao.CardDao");//注意与下一步的顺序
         //使用FactoryBean处理一下beanDefinition
