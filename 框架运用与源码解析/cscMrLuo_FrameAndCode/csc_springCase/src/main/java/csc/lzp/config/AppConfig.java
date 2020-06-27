@@ -1,13 +1,12 @@
 package csc.lzp.config;
 
-import csc.lzp.handler.MyImportBeanDefinitionRegistrar;
+import csc.lzp.anno.CSCScan;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
@@ -19,8 +18,8 @@ import javax.sql.DataSource;
  **/
 @Configurable
 @ComponentScan(basePackages = {"csc.lzp.service", "csc.lzp.dao"})
-//@Import(MyImportBeanDefinitionRegistrar.class)
-@MapperScan("csc.lzp.dao")
+//@MapperScan("csc.lzp.dao")
+@CSCScan
 public class AppConfig {
 
     @Bean
