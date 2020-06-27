@@ -22,7 +22,6 @@ public class Test {
 
         //CardDao cardDao = context.getBean(CardDao.class);
         CardDao cardDao = (CardDao) context.getBean("cardDao");
-        cardDao.list("key_l");
         System.out.println("cardDao是否存在: " + cardDao);
 
     }

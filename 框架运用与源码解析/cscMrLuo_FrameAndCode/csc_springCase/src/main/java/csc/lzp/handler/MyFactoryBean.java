@@ -37,6 +37,7 @@ public class MyFactoryBean implements FactoryBean, InvocationHandler {
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("proxy");
+        //得到代理对象的接口,得到接口方法
         Method method1 = proxy.getClass().getInterfaces()[0].getMethod(method.getName(), String.class);
         Select select = method1.getDeclaredAnnotation(Select.class);
         System.out.println("sql: " + select.value()[0]);
