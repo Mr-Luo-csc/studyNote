@@ -60,5 +60,6 @@ SUP Forever
 # 💰重要,前途很重要
 # 阁里咯里
 # Gentleman
+# 学习能力 目标 方向
 
 Sleep out you know ?!
