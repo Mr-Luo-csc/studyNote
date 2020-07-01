@@ -1,10 +1,13 @@
 package csc.lzp.dao;
 
+import org.springframework.stereotype.Repository;
+
 /**
  * @Discription:
  * @Author: luozhipeng
  * @Date: 2020/7/1
  **/
+@Repository
 public class IndexDao2 implements Dao {
 
     public IndexDao2() {
