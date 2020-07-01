@@ -5,6 +5,8 @@ package csc.lzp.dao;
  * @Author: luozhipeng
  * @Date: 2020/6/30
  **/
-public class Dao {
+public interface Dao {
+
+    String query();
 
 }
