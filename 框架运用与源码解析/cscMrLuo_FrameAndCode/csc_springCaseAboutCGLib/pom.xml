@@ -14,6 +14,15 @@
             <artifactId>spring-context</artifactId>
             <version>5.1.5.RELEASE</version>
         </dependency>
+
+        <!--cglib-nodep里包含了asm包,cglib里不包含asm包.asm包和cglib不匹配也会出错.因此用cglib-nodep就不会出现版本不匹配情况-->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>2.2</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 </project>
