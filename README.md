@@ -61,5 +61,6 @@ SUP Forever
 # 阁里咯里
 # Gentleman
 # 学习能力 目标 方向
+# 师傅领进门,修行靠个人
 
 Sleep out you know ?!
