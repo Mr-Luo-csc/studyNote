@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
  * @Date: 2020/7/1
  **/
 @Repository
+//@Mapper ?疑问使用@Mapper与@Repository这两者有什么去区别
 public class IndexDao1 implements Dao {
 
     public IndexDao1() {
