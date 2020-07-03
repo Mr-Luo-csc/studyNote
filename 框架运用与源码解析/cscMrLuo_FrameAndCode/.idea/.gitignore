@@ -3,3 +3,8 @@
 # Datasource local storage ignored files
 /dataSources.local.xml
 /dataSources/
+
+# 自定义
+*/target/
+*.log
+/target/*
