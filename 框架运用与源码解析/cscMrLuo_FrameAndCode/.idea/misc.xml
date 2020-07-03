@@ -3,14 +3,14 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/csc_springIOC/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_springAOP/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_JDKProxy/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_springHand/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_springCode/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_springCase/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_springCaseAboutAop/pom.xml" />
-        <option value="$PROJECT_DIR$/csc_springCaseAboutCGLib/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springIOC/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springHand/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springCode/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springCaseAboutCGLib/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springCaseAboutAop/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springCase/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-JDKProxy/pom.xml" />
       </list>
     </option>
   </component>

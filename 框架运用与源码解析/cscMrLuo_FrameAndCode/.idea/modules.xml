@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/csc_JDKProxy/csc_JDKProxy.iml" filepath="$PROJECT_DIR$/csc_JDKProxy/csc_JDKProxy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springAOP/csc_springAOP.iml" filepath="$PROJECT_DIR$/csc_springAOP/csc_springAOP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springCase/csc_springCase.iml" filepath="$PROJECT_DIR$/csc_springCase/csc_springCase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springCaseAboutAop/csc_springCaseAboutAop.iml" filepath="$PROJECT_DIR$/csc_springCaseAboutAop/csc_springCaseAboutAop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springCaseAboutCGLib/csc_springCaseAboutCGLib.iml" filepath="$PROJECT_DIR$/csc_springCaseAboutCGLib/csc_springCaseAboutCGLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springCode/csc_springCode.iml" filepath="$PROJECT_DIR$/csc_springCode/csc_springCode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springHand/csc_springHand.iml" filepath="$PROJECT_DIR$/csc_springHand/csc_springHand.iml" />
-      <module fileurl="file://$PROJECT_DIR$/csc_springIOC/csc_springIOC.iml" filepath="$PROJECT_DIR$/csc_springIOC/csc_springIOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-JDKProxy/csc-JDKProxy.iml" filepath="$PROJECT_DIR$/csc-JDKProxy/csc-JDKProxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springAOP/csc-springAOP.iml" filepath="$PROJECT_DIR$/csc-springAOP/csc-springAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springCase/csc-springCase.iml" filepath="$PROJECT_DIR$/csc-springCase/csc-springCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springCaseAboutAop/csc-springCaseAboutAop.iml" filepath="$PROJECT_DIR$/csc-springCaseAboutAop/csc-springCaseAboutAop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springCaseAboutCGLib/csc-springCaseAboutCGLib.iml" filepath="$PROJECT_DIR$/csc-springCaseAboutCGLib/csc-springCaseAboutCGLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springCode/csc-springCode.iml" filepath="$PROJECT_DIR$/csc-springCode/csc-springCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springHand/csc-springHand.iml" filepath="$PROJECT_DIR$/csc-springHand/csc-springHand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springIOC/csc-springIOC.iml" filepath="$PROJECT_DIR$/csc-springIOC/csc-springIOC.iml" />
     </modules>
   </component>
 </project>

@@ -6,25 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="csc_springAOP" />
-        <module name="csc_JDKProxy" />
-        <module name="csc_springCaseAboutAop" />
-        <module name="csc_springIOC" />
-        <module name="csc_springCode" />
-        <module name="csc_springCase" />
-        <module name="csc_springCaseAboutCGLib" />
-        <module name="csc_springHand" />
+        <module name="csc-springHand" />
+        <module name="csc-springIOC" />
+        <module name="csc-springCaseAboutCGLib" />
+        <module name="csc-springCase" />
+        <module name="csc-springCaseAboutAop" />
+        <module name="csc-springAOP" />
+        <module name="csc-springCode" />
+        <module name="csc-JDKProxy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="csc_JDKProxy" target="1.5" />
-      <module name="csc_springAOP" target="1.5" />
-      <module name="csc_springCase" target="8" />
-      <module name="csc_springCaseAboutAop" target="1.5" />
-      <module name="csc_springCaseAboutCGLib" target="1.5" />
-      <module name="csc_springCode" target="1.5" />
-      <module name="csc_springHand" target="1.5" />
-      <module name="csc_springIOC" target="1.5" />
+      <module name="csc-JDKProxy" target="1.5" />
+      <module name="csc-springAOP" target="1.5" />
+      <module name="csc-springCase" target="8" />
+      <module name="csc-springCaseAboutAop" target="1.5" />
+      <module name="csc-springCaseAboutCGLib" target="1.5" />
+      <module name="csc-springCode" target="1.5" />
+      <module name="csc-springHand" target="1.5" />
+      <module name="csc-springIOC" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
