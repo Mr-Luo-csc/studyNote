@@ -26,7 +26,7 @@
       <module name="csc-springCode" target="1.5" />
       <module name="csc-springHand" target="1.5" />
       <module name="csc-springIOC" target="1.5" />
-      <module name="csc-springLogger" target="1.5" />
+      <module name="csc-springLogger" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

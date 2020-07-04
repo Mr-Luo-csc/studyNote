@@ -1,6 +1,12 @@
 package csc.lzp.test.mytest;
 
+import csc.lzp.test.exception.FastJsonUtilException;
+import csc.lzp.test.utils.JSONUtils;
 import org.springframework.beans.BeanUtils;
+
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @Discription:
@@ -10,7 +16,7 @@ import org.springframework.beans.BeanUtils;
 public class MyTest {
 
     private String setter;
-    private String msg;
+    private int msg;
 
     //-------------------克隆方法(浅拷贝)--------------------//
     public static MyTest copyBean(MyTest sourceObj) {
@@ -20,8 +26,18 @@ public class MyTest {
     }
 
     //-------------------判空方法--------------------//
-    public static void isEmpty() {
-
+    public static MyTest isEmpty() {
+        try {
+            String jsonStr = "";
+            List<MyTest> listTest = JSONUtils.getList(jsonStr, MyTest.class);
+            Optional<MyTest> first = listTest.stream().filter(list -> list.getSetter() != null).sorted(Comparator.comparing(MyTest::getMsg).reversed()).findFirst();
+            if (first.isPresent()) {
+                return first.get();
+            }
+        } catch (FastJsonUtilException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     //-------------------Main测试--------------------//
@@ -34,7 +50,7 @@ public class MyTest {
         System.out.println("sourceObj == targetObj: " + (myTest == takeTarget));
     }*/
     public static void main(String[] args) {
-        MyTest myTest = new MyTest("csc","222");
+        MyTest myTest = new MyTest("csc", 222);
         MyTest myTest1 = new MyTest();
         BeanUtils.copyProperties(myTest, myTest1);
         System.out.println(myTest1.toString());
@@ -46,8 +62,18 @@ public class MyTest {
     }
 
     //-------------------Setter方法--------------------//
-    public void setMsg(String msg) {
+    public void setMsg(int msg) {
         this.msg = msg;
+    }
+
+    //-------------------Getter方法--------------------//
+    public String getSetter() {
+        return setter;
+    }
+
+    //-------------------Getter方法--------------------//
+    public int getMsg() {
+        return msg;
     }
 
     //-------------------重写toString方法--------------------//
@@ -64,7 +90,7 @@ public class MyTest {
     }
 
     //-------------------带参构造方法--------------------//
-    public MyTest(String setter, String msg) {
+    public MyTest(String setter, int msg) {
         this.setter = setter;
         this.msg = msg;
     }
