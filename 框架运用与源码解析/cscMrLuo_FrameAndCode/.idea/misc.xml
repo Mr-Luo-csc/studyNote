@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/csc-springCase/pom.xml" />
         <option value="$PROJECT_DIR$/csc-springAOP/pom.xml" />
         <option value="$PROJECT_DIR$/csc-JDKProxy/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springLogger/pom.xml" />
       </list>
     </option>
   </component>

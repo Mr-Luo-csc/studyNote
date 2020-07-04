@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="csc-springHand" />
         <module name="csc-springIOC" />
+        <module name="csc-springLogger" />
         <module name="csc-springCaseAboutCGLib" />
         <module name="csc-springCase" />
         <module name="csc-springCaseAboutAop" />
+        <module name="csc-springHand" />
         <module name="csc-springAOP" />
         <module name="csc-springCode" />
         <module name="csc-JDKProxy" />
@@ -25,6 +26,7 @@
       <module name="csc-springCode" target="1.5" />
       <module name="csc-springHand" target="1.5" />
       <module name="csc-springIOC" target="1.5" />
+      <module name="csc-springLogger" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
