@@ -7,11 +7,11 @@ import java.util.logging.Logger;
  * @Author: luozhipeng
  * @Date: 2020/7/4
  **/
-public class Jul {
+public class JUL {
 
     public static void main(String[] args) {
-        Logger logger = Logger.getLogger("Jul");
-        logger.info("这是: Jul");
+        Logger logger = Logger.getLogger("JUL");
+        logger.info("这是: JUL");
     }
 
 }
