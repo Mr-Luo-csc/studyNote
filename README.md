@@ -62,5 +62,6 @@ SUP Forever
 # Gentleman
 # 学习能力 目标 方向
 # 师傅领进门,修行靠个人
+# right study style
 
 Sleep out you know ?!
