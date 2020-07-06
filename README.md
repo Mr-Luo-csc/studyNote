@@ -63,5 +63,6 @@ SUP Forever
 # 学习能力 目标 方向
 # 师傅领进门,修行靠个人
 # right study style
+# 先模仿 再有自己的风格
 
 Sleep out you know ?!
