@@ -16,7 +16,7 @@ spring5用的不是log4j
 
 **日志框架**
 
-- 反射 构造器 newIntance
+- 反射 构造器 newInstance
 - jar冲突,导入jar中有其它修改过后的jar依赖
 - 绑定器
 - 路由器
