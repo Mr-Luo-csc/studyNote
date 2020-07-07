@@ -16,6 +16,7 @@
 **Mybatis**
 
 - spring-jdbc: spring自己的数据库连接池 不推荐使用c3p0
+- mybatis 打印日志 方式一:配置mybatis-config.xml 方式二:log4j配置文件中加一行代码添加代理打印
 
 
 
