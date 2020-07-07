@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/csc-springHand/csc-springHand.iml" filepath="$PROJECT_DIR$/csc-springHand/csc-springHand.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-springIOC/csc-springIOC.iml" filepath="$PROJECT_DIR$/csc-springIOC/csc-springIOC.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-springLogger/csc-springLogger.iml" filepath="$PROJECT_DIR$/csc-springLogger/csc-springLogger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springLoggerFiveAndMybatis/csc-springLoggerFiveAndMybatis.iml" filepath="$PROJECT_DIR$/csc-springLoggerFiveAndMybatis/csc-springLoggerFiveAndMybatis.iml" />
     </modules>
   </component>
 </project>
