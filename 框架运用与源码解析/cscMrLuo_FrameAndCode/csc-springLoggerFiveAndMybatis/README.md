@@ -8,7 +8,7 @@
 **spring5新特性**
 
 - 使用了Java8
-- 使用了lambe表达式
+- 使用了lambda表达式
 - 重新实现了spring自己的jcl
 
 ------
