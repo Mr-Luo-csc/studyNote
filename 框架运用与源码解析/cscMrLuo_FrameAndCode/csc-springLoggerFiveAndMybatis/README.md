@@ -20,3 +20,4 @@
 - 日志:在sqlSessionFactory中配置设置日志框架实现;在config类中添加@post方法初始化打印日志;在Spring初始化上下文时设置
 - mybatis 一级缓存:结合spring框架的时候失效了,sqlSessionFactory由spring控制;基于单个用户的缓存
 - mybatis 二级缓存:基于命名空间,在同一命名空间才有效
+- static{}静态块,new Runable(run()方法中去设置日志实现)
