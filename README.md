@@ -65,5 +65,6 @@ SUP Forever
 # right study style
 # 先模仿 再有自己的风格
 # 学习方式
+# three study
 
 Sleep out you know ?!
