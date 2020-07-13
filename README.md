@@ -67,5 +67,6 @@ SUP Forever
 # 学习方式
 # three study
 # nothing to do
+# 2⃣️
 
 Sleep out you know ?!
