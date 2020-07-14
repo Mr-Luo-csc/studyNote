@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserClazz {
 
-    Order order;
+    OrderClazz orderClazz;
 
-    public Order getOrder() {
-        return order;
+    public OrderClazz getOrderClazz() {
+        return orderClazz;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setOrderClazz(OrderClazz order) {
+        this.orderClazz = order;
     }
 
 }
