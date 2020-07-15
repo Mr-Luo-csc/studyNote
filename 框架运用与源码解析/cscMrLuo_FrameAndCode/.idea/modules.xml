@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/csc-JDKProxy/csc-JDKProxy.iml" filepath="$PROJECT_DIR$/csc-JDKProxy/csc-JDKProxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-Mybatis/csc-Mybatis.iml" filepath="$PROJECT_DIR$/csc-Mybatis/csc-Mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-springAOP/csc-springAOP.iml" filepath="$PROJECT_DIR$/csc-springAOP/csc-springAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csc-springAopCase/csc-springAopCase.iml" filepath="$PROJECT_DIR$/csc-springAopCase/csc-springAopCase.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-springCase/csc-springCase.iml" filepath="$PROJECT_DIR$/csc-springCase/csc-springCase.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-springCaseAboutAop/csc-springCaseAboutAop.iml" filepath="$PROJECT_DIR$/csc-springCaseAboutAop/csc-springCaseAboutAop.iml" />
       <module fileurl="file://$PROJECT_DIR$/csc-springCaseAboutCGLib/csc-springCaseAboutCGLib.iml" filepath="$PROJECT_DIR$/csc-springCaseAboutCGLib/csc-springCaseAboutCGLib.iml" />

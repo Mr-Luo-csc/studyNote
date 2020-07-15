@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/csc-springLogger/pom.xml" />
         <option value="$PROJECT_DIR$/csc-springLoggerFiveAndMybatis/pom.xml" />
         <option value="$PROJECT_DIR$/csc-Mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/csc-springAopCase/pom.xml" />
       </list>
     </option>
   </component>
