@@ -14,20 +14,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderServiceImplByPostProcessor implements ApplicationContextAware {
 
-    ApplicationContext applicationContext;
-
-    public void query() {
-        System.out.println("service层的查询订单方法");
-        OrderDao orderDaoImplA = (OrderDao) applicationContext.getBean("orderDaoImplA");
-        OrderDao orderDaoImplB = (OrderDao) applicationContext.getBean("orderDaoImplB");
-        if (true) {
-
-        } else if (false) {
-
-        }
-    }
+    //----------------------给当前service层添加applicationContext属性-------------------------//
+    private ApplicationContext applicationContext;
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
+
+    //----------------不用用户调用不同的Dao-------------------//
+    public void query(String userName) {
+        if (userName.equals("A")) {
+            OrderDao orderDaoImplA = (OrderDao) applicationContext.getBean("orderDaoImplA");
+            orderDaoImplA.query();
+        } else if (userName.equals("B")) {
+            OrderDao orderDaoImplB = (OrderDao) applicationContext.getBean("orderDaoImplB");
+            orderDaoImplB.query();
+        }
+    }
+
 }

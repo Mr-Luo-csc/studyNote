@@ -14,12 +14,22 @@ import java.util.Map;
 @Service
 public class OrderServiceImplByAutowire {
 
-    //@Autowired
-    //private Map<String, OrderDao> map;
+    //-------------key对应bean实例名称 value对应bean实例对象--------------//
+    @Autowired
+    private Map<String, OrderDao> map;
 
-    public void query() {
-        System.out.println("service层的查询订单方法");
-        //System.out.println(map);
+    public void query(String userName) {
+        //输出一下map中的值
+        System.out.println("Map中存在的bean实例: " + map);
+
+        for (String key : map.keySet()) {
+            //根据用户类型去map中拿想要的bean实例
+            if (key.equals(userName)) {
+                OrderDao orderDao = map.get(key);
+                //执行dao中查询操作
+                orderDao.query();
+            }
+        }
     }
 
 }
