@@ -30,6 +30,11 @@ public class DbConfig implements ImportAware {
         this.password = attrs.getString("password");
     }
 
+    //打印属性方法
+    public void print() {
+        System.out.println("username:" + username + " " + "password:" + password);
+    }
+
     //getter方法
     public String getUsername() {
         return username;

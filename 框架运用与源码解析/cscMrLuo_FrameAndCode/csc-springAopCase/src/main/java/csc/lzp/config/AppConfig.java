@@ -1,5 +1,6 @@
 package csc.lzp.config;
 
+import csc.lzp.anno.EnableDbConfigAnnotation;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  **/
 @Configuration
 @ComponentScan(basePackages = {"csc.lzp"})
+@EnableDbConfigAnnotation(username = "mr-luo", password = "123456")
 public class AppConfig {
 
 }

@@ -32,7 +32,7 @@ public class AppTest {
 
         //测试使用ImportAware
         DbConfig dbConfig = context.getBean(DbConfig.class);
-        System.out.println("username: " + dbConfig.getUsername() + " " + "password: " + dbConfig.getPassword());
+        dbConfig.print();
     }
 
 }

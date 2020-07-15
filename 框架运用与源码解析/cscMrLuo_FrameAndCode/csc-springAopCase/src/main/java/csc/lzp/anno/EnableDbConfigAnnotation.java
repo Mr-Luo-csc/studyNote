@@ -1,5 +1,8 @@
 package csc.lzp.anno;
 
+import csc.lzp.config.DbConfig;
+import org.springframework.context.annotation.Import;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -9,6 +12,7 @@ import java.lang.annotation.RetentionPolicy;
  * @Date: 2020/7/15
  **/
 @Retention(RetentionPolicy.RUNTIME)
+@Import(DbConfig.class)
 public @interface EnableDbConfigAnnotation {
 
     String username() default "root";
