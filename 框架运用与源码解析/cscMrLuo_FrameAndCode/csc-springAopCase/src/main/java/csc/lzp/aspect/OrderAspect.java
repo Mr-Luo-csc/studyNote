@@ -3,6 +3,7 @@ package csc.lzp.aspect;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,9 +13,15 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 @Aspect
+@EnableAspectJAutoProxy
 public class OrderAspect {
 
-    @Pointcut("execution(* csc.lzp.service.*.*(..))")
+    /****************************************/
+    /** @EnableAspectJAutoProxy注解          */
+    /** 开启注解版AOP功能 基于注解的方式实现AOP  */
+    /****************************************/
+
+    @Pointcut("execution(* csc.lzp.service.OrderServiceImpl.*(..))")
     public void myPoint() {
         //表达式: 这里切service包中所有的方法
     }

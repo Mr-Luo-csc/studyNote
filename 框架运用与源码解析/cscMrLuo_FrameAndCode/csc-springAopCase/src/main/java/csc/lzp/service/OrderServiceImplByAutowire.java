@@ -14,12 +14,12 @@ import java.util.Map;
 @Service
 public class OrderServiceImplByAutowire {
 
-    @Autowired
-    private Map<String, OrderDao> map;
+    //@Autowired
+    //private Map<String, OrderDao> map;
 
     public void query() {
         System.out.println("service层的查询订单方法");
-        System.out.println(map);
+        //System.out.println(map);
     }
 
 }
