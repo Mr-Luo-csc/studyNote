@@ -7,5 +7,5 @@ package csc.lzp.dao;
  **/
 public interface OrderDao {
 
-    void query();
+    void query(String userName);
 }

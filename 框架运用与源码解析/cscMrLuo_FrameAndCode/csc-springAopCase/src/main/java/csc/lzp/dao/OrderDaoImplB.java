@@ -8,7 +8,7 @@ package csc.lzp.dao;
  **/
 public class OrderDaoImplB implements OrderDao {
 
-    public void query() {
+    public void query(String userName) {
         System.out.println("BBB");
     }
 
