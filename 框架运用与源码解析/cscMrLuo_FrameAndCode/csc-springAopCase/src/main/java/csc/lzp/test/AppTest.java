@@ -1,6 +1,7 @@
 package csc.lzp.test;
 
 import csc.lzp.config.AppConfig;
+import csc.lzp.config.DbConfig;
 import csc.lzp.service.OrderServiceImpl;
 import csc.lzp.service.OrderServiceImplByAutowire;
 import csc.lzp.service.OrderServiceImplByPostProcessor;
@@ -28,6 +29,10 @@ public class AppTest {
         //测试使用@autowired注解的方式得到不用的dao,根据用户类型拿取dao
         OrderServiceImplByAutowire serviceImplByAutowire = context.getBean(OrderServiceImplByAutowire.class);
         serviceImplByAutowire.query("orderDaoImplA");
+
+        //测试使用ImportAware
+        DbConfig dbConfig = context.getBean(DbConfig.class);
+        System.out.println("username: " + dbConfig.getUsername() + " " + "password: " + dbConfig.getPassword());
     }
 
 }
