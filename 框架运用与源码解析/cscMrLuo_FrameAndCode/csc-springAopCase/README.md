@@ -24,7 +24,7 @@
 
 - 静态工厂
 - 实例工厂
-- 实现FactoryBean接口
+- 实现FactoryBean接口 `加"&"返回工厂Bean的实例`
 
 ```xml
 <!--将其纳入Spring容器来管理,需要通过factory-method指定静态方法名称-->
