@@ -26,15 +26,15 @@
 - 实例工厂
 - 实现FactoryBean接口
 
-```
-//将其纳入Spring容器来管理,需要通过factory-method指定静态方法名称
-//createRandom方法必须是static的,才能找到
+```xml
+<!--将其纳入Spring容器来管理,需要通过factory-method指定静态方法名称-->
+<!--createRandom方法必须是static的,才能找到-->
 <bean id="random" class="csc.lzp.StaticFactoryBean" factory-method="createRandom" scope="prototype"/>
 ```
 
 ```xml
 <bean id="instanceFactoryBean" class="example.chapter3.InstanceFactoryBean">
-<property name="format" value="yyyy-MM-dd HH:mm:ss" />
+<property name="format" value="yyyy-MM-dd HH:mm:ss"/>
 </bean>
 
 <bean id="currentTime" factory-bean="instanceFactoryBean" factory-method="createTime"/>
