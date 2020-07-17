@@ -7,3 +7,10 @@
 - spring中属性自动装配的类型 会剔除哪些属性,spring这里有条件塞选
 
 # how to flare mr-luo
+
+------
+
+- FactoryMethod
+- UniqueFactoryMethod
+- IsStatic判断是否是static的方法
+- 某个类不要spring去自动装配属性就放到bean容器中
