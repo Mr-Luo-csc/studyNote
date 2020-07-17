@@ -33,6 +33,12 @@ public class AppTest {
         //测试使用ImportAware
         DbConfig dbConfig = context.getBean(DbConfig.class);
         dbConfig.print();
+
+        //测试获取启动过程中的bean 定义的名称
+        for(String str : context.getBeanDefinitionNames()){
+            System.out.println("=================   str = " + str);
+        }
+
     }
 
 }
