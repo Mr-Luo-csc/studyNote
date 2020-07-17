@@ -14,3 +14,5 @@
 - UniqueFactoryMethod
 - IsStatic判断是否是static的方法
 - 某个类不要spring去自动装配属性就放到bean容器中
+
+- 判断有参还是无参构造方法创建实例 无参构造方法Spring默认是0
