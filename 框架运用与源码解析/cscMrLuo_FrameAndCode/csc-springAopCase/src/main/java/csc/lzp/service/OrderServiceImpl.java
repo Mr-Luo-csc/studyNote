@@ -1,6 +1,5 @@
 package csc.lzp.service;
 
-import csc.lzp.dao.OrderDao;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Service;
 
