@@ -1,5 +1,6 @@
 package csc.lzp.service;
 
+import csc.lzp.dao.OrderDao;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Service;
 
@@ -11,12 +12,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderServiceImpl implements InitializingBean {
 
-    public OrderServiceImpl() {
+   /* public OrderServiceImpl() {
         System.out.println("执行了OrderServiceImpl的无参构造方法...");
+    }*/
+
+    Class orderDao;
+
+    //--------------测试有参构造方法设置值------------------//
+    public OrderServiceImpl(Class orderDao) {
+        this.orderDao = orderDao;
+        //spring会忽略Class类型的属性这里不会自动装配,mybatis中也是通过设置构造方法设置对应参数实现的,字符串变成对象的过程[这里不需要知道是怎么实现的]
+        System.out.println("执行了OrderServiceImpl的有参构造方法...");
     }
 
     public void query() {
         System.out.println("service层的查询订单方法");
+        System.out.println("orderService中orderDao的属性是否赋值了: " + this.orderDao);
     }
 
     public void afterPropertiesSet() throws Exception {

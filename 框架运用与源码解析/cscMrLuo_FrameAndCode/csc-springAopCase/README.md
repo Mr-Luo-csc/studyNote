@@ -39,3 +39,7 @@
 
 <bean id="currentTime" factory-bean="instanceFactoryBean" factory-method="createTime"/>
 ```
+
+------
+
+>好闪 moonlight 我快顶不住了
