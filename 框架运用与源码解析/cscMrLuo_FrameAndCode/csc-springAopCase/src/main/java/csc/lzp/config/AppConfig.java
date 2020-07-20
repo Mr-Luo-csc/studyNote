@@ -1,5 +1,6 @@
 package csc.lzp.config;
 
+import com.snowalker.lock.redisson.config.EnableRedissonLock;
 import csc.lzp.anno.EnableDbConfigAnnotation;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages = {"csc.lzp"})
 @EnableDbConfigAnnotation(username = "mr-luo", password = "123456")
+//@EnableRedissonLock
 public class AppConfig {
 
 }
