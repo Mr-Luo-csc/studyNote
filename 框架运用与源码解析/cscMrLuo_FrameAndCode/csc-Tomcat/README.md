@@ -9,7 +9,7 @@
 
 | 服务器 | 与Tomcat的区别 |
 | :---: | :--- |
-| apache | apache是web服务器 tomcat是应用（java）服务器 tomcat是apache的扩展 apache不能解释java程序 tomcat可以 |
-| nginx | nginx常用做静态内容服务和代理服务器 直接外来请求转发给后面的应用服务器 tomcat更多用来做一个应用的容器 |
+| apache | apache是web服务器 <br> tomcat是应用（java）服务器 <br> tomcat是apache的扩展 <br> apache不能解释java程序,tomcat可以 |
+| nginx | nginx常用做静态内容服务和代理服务器,直接外来请求转发给后面的应用服务器 <br> tomcat更多用来做一个应用的容器 |
 
 
