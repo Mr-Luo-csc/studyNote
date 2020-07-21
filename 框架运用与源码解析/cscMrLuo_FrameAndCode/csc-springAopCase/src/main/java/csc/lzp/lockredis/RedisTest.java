@@ -1,4 +1,4 @@
-package csc.lzp.redislock;
+package csc.lzp.lockredis;
 
 import csc.lzp.config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

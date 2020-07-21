@@ -1,8 +1,7 @@
-package csc.lzp.redislock;
+package csc.lzp.lockredis;
 
 import com.snowalker.lock.redisson.RedissonLock;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * @Discription: 测试使用Redis的分布式锁的使用
