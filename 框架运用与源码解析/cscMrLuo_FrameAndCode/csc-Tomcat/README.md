@@ -18,3 +18,15 @@
 - 责任链模式
 
 ![avatar](../../../Image/tomcat模拟.jpeg)
+
+------
+
+- tomcat中所有的组件都有生命周期 lifeCye
+- tomcat中所有的组件可以共用线程池,如果是组件内部定义的线程池的话都不可共用
+
+
+**手动启动tomcat源码报错的问题**
+
+>原因是我们直接启动org.apache.catalina.startup.Bootstrap的时候没有加载org.apache.jasper.servlet.JasperInitializer,从而无法编译JSP
+>这在Tomcat6/7是没有这个问题的
+>解决办法是在tomcat的源码org.apache.catalina.startup.ContextConfig中手动将JSP解析器初始化
