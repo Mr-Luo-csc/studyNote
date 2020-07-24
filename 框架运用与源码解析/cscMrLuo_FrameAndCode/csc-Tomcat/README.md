@@ -30,3 +30,5 @@
 >原因是我们直接启动org.apache.catalina.startup.Bootstrap的时候没有加载org.apache.jasper.servlet.JasperInitializer,从而无法编译JSP <br>
 >这在Tomcat6/7是没有这个问题的 <br>
 >解决办法是在tomcat的源码org.apache.catalina.startup.ContextConfig中手动将JSP解析器初始化
+
+_今天看一了篇博客(敖丙),我给自己两年时间,在这行业,破釜沉舟,不成功便离[23岁]_
