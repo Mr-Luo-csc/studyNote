@@ -32,3 +32,11 @@
 >解决办法是在tomcat的源码org.apache.catalina.startup.ContextConfig中手动将JSP解析器初始化
 
 _今天看一了篇博客(敖丙),我给自己两年时间,在这行业,破釜沉舟,不成功便离[23岁]_
+
+------
+
+# Tomcat的运行
+
+- 组件的生命周期 两大类[连接器组件的生命周期、容器组件的生命周期]
+- Tomcat的初始化
+- Tomcat的启动
