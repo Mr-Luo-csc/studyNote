@@ -7,17 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="csc-Mybatis" />
-        <module name="csc-JDKProxy" />
+        <module name="csc-springIOC" />
         <module name="csc-springAopCase" />
-        <module name="csc-Tomcat" />
         <module name="csc-springLogger" />
         <module name="csc-springCaseAboutCGLib" />
         <module name="csc-springCase" />
         <module name="csc-springCaseAboutAop" />
-        <module name="csc-springHand" />
+        <module name="csc-JDKProxy" />
         <module name="csc-springAOP" />
         <module name="csc-springCode" />
-        <module name="csc-springIOC" />
+        <module name="csc-springHand" />
         <module name="csc-springLoggerFiveAndMybatis" />
       </profile>
     </annotationProcessing>
@@ -34,7 +33,6 @@
       <module name="csc-springIOC" target="1.5" />
       <module name="csc-springLogger" target="8" />
       <module name="csc-springLoggerFiveAndMybatis" target="1.5" />
-      <module name="csc-Tomcat" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
