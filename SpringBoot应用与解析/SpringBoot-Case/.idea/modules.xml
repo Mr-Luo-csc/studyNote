@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-uploadFile/spring-uploadFile.iml" filepath="$PROJECT_DIR$/spring-uploadFile/spring-uploadFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web-mvc/spring-web-mvc.iml" filepath="$PROJECT_DIR$/spring-web-mvc/spring-web-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web-socket/spring-web-socket.iml" filepath="$PROJECT_DIR$/spring-web-socket/spring-web-socket.iml" />
     </modules>
   </component>
 </project>
