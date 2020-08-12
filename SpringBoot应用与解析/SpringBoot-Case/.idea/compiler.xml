@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-web-mvc" />
         <module name="spring-uploadFile" />
+        <module name="spring-web-socket" />
+        <module name="spring-web-mvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-uploadFile" target="1.7" />
       <module name="spring-web-mvc" target="1.5" />
+      <module name="spring-web-socket" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
