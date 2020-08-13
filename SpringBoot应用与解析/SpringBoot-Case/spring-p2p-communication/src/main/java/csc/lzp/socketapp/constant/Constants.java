@@ -1,5 +1,8 @@
 package csc.lzp.socketapp.constant;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Description: 模拟保存用户信息的常量
  * @Author: luozhipeng
@@ -7,6 +10,6 @@ package csc.lzp.socketapp.constant;
  **/
 public class Constants {
 
-
+    public static List<String> list = new ArrayList<>();
 
 }
