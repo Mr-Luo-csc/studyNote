@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>聊天平台</title>
-    <link rel="stylesheet" href="../resources/layui/css/layui.css">
-    <script src="../resources/layui/layui.js"></script>
-    <script src="../resources/jquery.js"></script>
-    <script src="../resources/app.js"></script>
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
     <script src="/webjars/sockjs-client/1.0.2/sockjs.min.js"></script>
     <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
 </head>
@@ -78,43 +78,43 @@
     });
 
     $(function () {
-        var info = "";
+        //todo 获取当前登录用户信息
+        var userName = "";
         $.ajax({
-            url: "/userInfo",//发送在线人数给所有客户端
+            url: "/userInfo",
             type: "post",
             dataType: "json",
             success: function (data) {
                 console.log(data);
-                info = data.info;
+                userName = data.userName;
             }
-
         });
-        //连接ws
-        var socket = new SockJS('/luban');
+        //todo 连接websocket
+        var socket = new SockJS('/luozhipeng');
         stompClient = Stomp.over(socket);
         stompClient.connect({}, function (frame) {
-            //订阅-------获取在线人数
+            //todo 订阅---获取在线人数
             stompClient.subscribe('/topic/userList', function (data) {
+                //展示在线人数
                 initOnLine(data.body)
             });
-            //訂閲  聊天的消息，發給我
-            stompClient.subscribe('/user/' + info + "/luban", function (data) {
+            //todo 订阅---聊天的消息,发给自己的
+            stompClient.subscribe('/user/' + userName + "/luozhipeng", function (data) {
                 console.log(data);
             });
-
+            //todo 发送---在线人数给所有客户端
             $.ajax({
-                url: "/userList",//发送在线人数给所有客户端
+                url: "/userList",
                 type: "post",
                 dataType: "json",
                 success: function (data) {
-
+                    console.log(data);
                 }
-
             });
         });
     });
 
-
+    //todo 聊天函数
     function chat(obj) {
 
         //把sendToUserName存到一个input
@@ -122,15 +122,15 @@
 
         layui.use('layer', function () {
             layer.open({
-                area: ['700px', '900px'],
+                area: ['600px', '650px'],
                 type: 2,
-                content: 'chat.html',
-                maxWidth: 600,
+                content: 'chat.html'
             });
         });
 
     }
 
+    //todo 在线人数函数
     function initOnLine(data) {
         //user1,user2,user3,user4
         data = data.split(",");

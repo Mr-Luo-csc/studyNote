@@ -1,7 +1,7 @@
 var stompClient = null;
 
 function connect() {
-    var socket = new SockJS('/luban');
+    var socket = new SockJS('/luozhipeng');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
     });
