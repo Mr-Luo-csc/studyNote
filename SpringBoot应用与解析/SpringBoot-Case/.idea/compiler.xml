@@ -13,10 +13,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-p2p-communication" target="1.5" />
-      <module name="spring-uploadFile" target="1.7" />
-      <module name="spring-web-mvc" target="1.5" />
-      <module name="spring-web-socket" target="1.5" />
+      <module name="spring-p2p-communication" target="8" />
+      <module name="spring-uploadFile" target="8" />
+      <module name="spring-web-mvc" target="8" />
+      <module name="spring-web-socket" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
