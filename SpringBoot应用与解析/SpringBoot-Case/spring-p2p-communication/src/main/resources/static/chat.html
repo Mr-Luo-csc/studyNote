@@ -92,7 +92,8 @@
 <body>
 <div id="container">
     <div id="header">
-        莫妮卡
+        <!--todo 接收者-->
+        <b id="recipient"></b>
     </div>
 
     <ul id="content">
@@ -118,19 +119,27 @@
     var username = "";//自己是谁
     $(function () {
         sendToName = parent.$("#sendUsername").val();
+        $("#recipient").html(sendToName);
         //todo 触发发送消息按钮的点击事件
         $("#sendButton").click(function () {
             var chatMsg = $("#sendVal").val();
+            //todo 消息为空,添加提示
             //todo 调用后台发送消息接口
             $.ajax({
                 url: "/chat",
                 type: "post",
-                data: 'message=' + chatMsg + '&username=' + sendToName,
+                data: 'message=' + chatMsg + '&plmm=' + sendToName,
                 dataType: "json",
                 success: function (data) {
                     console.log("发送消息成功");
                 }
             });
+
+            //todo 给消息容器中添加消息
+            $("#content").append("<li style='margin-top: 10px'><div class='msg'>" + chatMsg + "</div></li>");
+            //todo 消息发送框清空
+            $("#sendVal").val("");
+
             //todo 查询当前用户信息
             $.ajax({
                 url: "/userInfo",
@@ -150,6 +159,7 @@
             //订阅---聊天的消息,发給我,自己查看的消息
             stompClient.subscribe('/user/' + username + "/luozhipeng", function (data) {
                 console.log("接收到消息" + data.body);
+                $("#content").append("<li style='margin-top: 10px'><div>" + data.body + "</div></li>");
             });
         });
 

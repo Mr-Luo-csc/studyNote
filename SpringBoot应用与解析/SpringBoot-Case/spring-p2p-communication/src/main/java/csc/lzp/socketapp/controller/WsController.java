@@ -13,6 +13,8 @@ import java.io.IOException;
 
 /**
  * @Description: 接口层
+ * todo 1、session的单体问题
+ * todo 2、服务器发送消息成功之后,ajax不会回调success接口
  * @Author: luozhipeng
  * @Date: 2020/8/13
  **/
@@ -44,7 +46,7 @@ public class WsController {
         for (String singleUsername : Constants.usernameList) {
             allUser += singleUsername + ",";
         }
-        //allUser = allUser.substring(0, allUser.length() - 1);
+        allUser = allUser.substring(0, allUser.length() - 1);
         System.out.println("全部用户:" + allUser);
         template.convertAndSend("/topic/userList", allUser);
         return "获取在线人数成功";
@@ -57,6 +59,7 @@ public class WsController {
     @ResponseBody
     public String userIno(HttpServletRequest request) {
         String username = request.getSession().getAttribute("username").toString();
+        System.out.println("当前登录用户: " + username);
         return "{\"username\":\"" + username + "\"}";
     }
 
@@ -65,9 +68,9 @@ public class WsController {
      */
     @RequestMapping(value = "chat")
     @ResponseBody
-    public String chat(String message, String username) {
-        System.out.println("发送消息者:" + username + " 消息内容:" + message);
-        template.convertAndSendToUser(username, "luozhipeng", message);
+    public String chat(String message, String plmm) {
+        System.out.println("接收消息者:" + plmm + " 消息内容:" + message);
+        template.convertAndSendToUser(plmm, "luozhipeng", message);
         return "服务器转发消息成功";
     }
 

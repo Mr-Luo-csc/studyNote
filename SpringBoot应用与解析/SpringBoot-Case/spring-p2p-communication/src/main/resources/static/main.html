@@ -57,7 +57,7 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;">内容主体区域</div>
+        <div id="receiveMsg" style="padding: 15px;">内容主体区域</div>
     </div>
 
     <div class="layui-footer">
@@ -101,7 +101,8 @@
             });
             //todo 订阅---聊天的消息,发给自己的
             stompClient.subscribe('/user/' + username + "/luozhipeng", function (data) {
-                console.log(data);
+                $("#receiveMsg").html(data.body);
+                console.log(data.body);
             });
             //todo 发送---在线人数给所有客户端
             $.ajax({
