@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/spring-web-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/spring-uploadFile/pom.xml" />
         <option value="$PROJECT_DIR$/spring-web-socket/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-p2p-communication/pom.xml" />
       </list>
     </option>
   </component>
