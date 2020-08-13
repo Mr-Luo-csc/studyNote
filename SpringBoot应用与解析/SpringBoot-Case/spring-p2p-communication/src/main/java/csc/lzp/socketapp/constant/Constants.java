@@ -10,6 +10,6 @@ import java.util.List;
  **/
 public class Constants {
 
-    public static List<String> userNameList = new ArrayList<>();
+    public static List<String> usernameList = new ArrayList<>();
 
 }

@@ -48,6 +48,7 @@
     <div class="layui-side layui-bg-black">
         <div class="layui-side-scroll">
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <b>----------平台在线用户----------</b>
             <ul class="layui-nav layui-nav-tree" lay-filter="test" id="onLine">
 
             </ul>
@@ -79,14 +80,14 @@
 
     $(function () {
         //todo 获取当前登录用户信息
-        var userName = "";
+        var username = "";
         $.ajax({
             url: "/userInfo",
             type: "post",
             dataType: "json",
             success: function (data) {
                 console.log(data);
-                userName = data.userName;
+                username = data.username;
             }
         });
         //todo 连接websocket
@@ -99,7 +100,7 @@
                 initOnLine(data.body)
             });
             //todo 订阅---聊天的消息,发给自己的
-            stompClient.subscribe('/user/' + userName + "/luozhipeng", function (data) {
+            stompClient.subscribe('/user/' + username + "/luozhipeng", function (data) {
                 console.log(data);
             });
             //todo 发送---在线人数给所有客户端
@@ -108,17 +109,18 @@
                 type: "post",
                 dataType: "json",
                 success: function (data) {
-                    console.log(data);
+                    //todo 为什么这里不走 直接走第99Line
+                    alert("/userList接口" + data);
                 }
             });
         });
     });
 
     //todo 聊天函数
-    function chat(obj) {
+    function chat(plmm) {
 
         //把sendToUserName存到一个input
-        $("#sendUsername").val(obj);
+        $("#sendUsername").val(plmm);
 
         layui.use('layer', function () {
             layer.open({

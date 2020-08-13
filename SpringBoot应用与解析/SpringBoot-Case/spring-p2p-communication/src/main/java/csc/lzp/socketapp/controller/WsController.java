@@ -28,9 +28,9 @@ public class WsController {
     @RequestMapping(value = "/login")
     public void login(String username, HttpServletRequest request, HttpServletResponse response) throws IOException {
         //维护一个在线人员的列表
-        Constants.userNameList.add(username);
+        Constants.usernameList.add(username);
         //把当前登录人存到session
-        request.getSession().setAttribute("userName", username);
+        request.getSession().setAttribute("username", username);
         response.sendRedirect("main.html");
     }
 
@@ -41,8 +41,8 @@ public class WsController {
     @ResponseBody
     public String userList() {
         String allUser = "";
-        for (String singleUserName : Constants.userNameList) {
-            allUser += singleUserName + ",";
+        for (String singleUsername : Constants.usernameList) {
+            allUser += singleUsername + ",";
         }
         //allUser = allUser.substring(0, allUser.length() - 1);
         System.out.println("全部用户:" + allUser);
@@ -56,8 +56,19 @@ public class WsController {
     @RequestMapping(value = "userInfo")
     @ResponseBody
     public String userIno(HttpServletRequest request) {
-        String userName = request.getSession().getAttribute("userName").toString();
-        return "{\"userName\":\"" + userName + "\"}";
+        String username = request.getSession().getAttribute("username").toString();
+        return "{\"username\":\"" + username + "\"}";
+    }
+
+    /**
+     * 客户端发送聊天消息,通过服务端转发消息的接口
+     */
+    @RequestMapping(value = "chat")
+    @ResponseBody
+    public String chat(String message, String username) {
+        System.out.println("发送消息者:" + username + " 消息内容:" + message);
+        template.convertAndSendToUser(username, "luozhipeng", message);
+        return "服务器转发消息成功";
     }
 
 }

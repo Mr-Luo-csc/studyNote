@@ -114,32 +114,43 @@
 </body>
 
 <script>
-    var sendToName = "";//發送給誰
-    var info = "";//自己是誰
+    var sendToName = "";//发送给谁
+    var username = "";//自己是谁
     $(function () {
-		sendToName = parent.$("#sendUsername").val();
+        sendToName = parent.$("#sendUsername").val();
+        //todo 触发发送消息按钮的点击事件
         $("#sendButton").click(function () {
             var chatMsg = $("#sendVal").val();
+            //todo 调用后台发送消息接口
             $.ajax({
-                url: "/chat",//发送在线人数给所有客户端
+                url: "/chat",
                 type: "post",
-                data: 'message=' + chatMsg + '&username=' + sendToname,
+                data: 'message=' + chatMsg + '&username=' + sendToName,
                 dataType: "json",
                 success: function (data) {
-                    //info = data.info;
+                    console.log("发送消息成功");
+                }
+            });
+            //todo 查询当前用户信息
+            $.ajax({
+                url: "/userInfo",
+                type: "post",
+                dataType: "json",
+                success: function (data) {
+                    console.log("自己是谁" + data.username);
+                    username = data.username;
                 }
             });
         });
 
-        var socket = new SockJS('/luban');
+        var socket = new SockJS('/luozhipeng');
         stompClient = Stomp.over(socket);
         stompClient.connect({}, function (frame) {
-            console.log(sendToname + "pppppppppppppppppppppppp")
-            //訂閲  聊天的消息，發給我
-            stompClient.subscribe('/user/' + info + "/luban", function (data) {
-                console.log(data);
+            console.log("接收者" + sendToName)
+            //订阅---聊天的消息,发給我,自己查看的消息
+            stompClient.subscribe('/user/' + username + "/luozhipeng", function (data) {
+                console.log("接收到消息" + data.body);
             });
-
         });
 
     })
