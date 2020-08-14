@@ -13,6 +13,9 @@ import java.util.Map;
 @Controller
 public class WebSocketController {
 
+    /**
+     * 给其它页面来异步刷新报表操作的接口
+     */
     @RequestMapping(value = "/update")
     public Map<String, String> update(@RequestParam("value") String value) {
         Map<String, String> map = new HashMap<>();
