@@ -1,4 +1,9 @@
-# 使用springMVC 实现一个webSocket案例
+# springMVC中的知识点:webSocket
 
-**E charts 报表的使用**
-- 实现一个动态更新报表的案例
+- 该项目实现了一个更新报表的案例
+
+------
+
+**socket和websocket**
+
+![avatar](https://github.com/Mr-Luo-csc/studyNote/blob/master/Image/socket%E5%92%8Cwebsocket.png)
