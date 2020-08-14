@@ -22,7 +22,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     //======服务端 到 客户端 订阅哪个路由
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
-        config.enableSimpleBroker("topic");
+        config.enableSimpleBroker("/topic/echarts");
 
         //controller
         config.setApplicationDestinationPrefixes("/app");
