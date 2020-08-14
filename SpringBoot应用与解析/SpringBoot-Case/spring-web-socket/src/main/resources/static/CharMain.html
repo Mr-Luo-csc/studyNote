@@ -6,7 +6,7 @@
     <script src="/webjars/sockjs-client/1.0.2/sockjs.min.js"></script>
     <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
     <!-- 引入 ECharts 文件 -->
-    <script src="../js/echarts.min.js"></script>
+    <script src="/js/echarts.min.js"></script>
     <title>报表主页面</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
     var stompClient = null;
 
     function connect() {
-        var socket = new SockJS('/luban');
+        var socket = new SockJS('/whichDay');
         stompClient = Stomp.over(socket);
         stompClient.connect({}, function (frame) {
             console.log('Connected: ' + frame);
@@ -57,13 +57,13 @@
     }
 
     function sendName() {
-        stompClient.send("/app/hello", {}, JSON.stringify({'name': "dawei"}));
+        stompClient.send("/app/view", {}, JSON.stringify({'name': "彭于晏"}));
     }
 
     connect();
 </script>
 
-<a href="javascript:sendName()">cscscscscscscscscscscscscscscscs</a>
+<button onclick="javascript:sendName()">刷新操作</button>
 
 </body>
 </html>
