@@ -7,6 +7,13 @@ package csc.lzp.handwrite.event;
  **/
 public class MovieEvent {//时间、地点、任务、环境...
 
+    //todo 拿到事件原,用这个案例来说,我们的事件原指的是电影[被观察者]---这里是抽象出来的,可以多理解
+    Object source;
+
+    public MovieEvent(Object source) {
+        this.source = source;
+    }
+
     private String content;
 
     private int type;

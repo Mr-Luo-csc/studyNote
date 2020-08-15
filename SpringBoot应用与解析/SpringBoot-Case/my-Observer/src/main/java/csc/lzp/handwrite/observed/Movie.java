@@ -28,7 +28,7 @@ public class Movie implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        MovieEvent movieEvent = new MovieEvent();
+        MovieEvent movieEvent = new MovieEvent(this);
         movieEvent.setContent("lonely someone 处于一个人的环境下");
         movieEvent.setType(1);
         //主动将事件给观影者,让观影者去做其它事情
