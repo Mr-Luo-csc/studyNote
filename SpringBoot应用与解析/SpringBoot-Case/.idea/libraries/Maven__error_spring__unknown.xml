@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: error:spring-:unknown">
+    <CLASSES>
+      <root url="jar:///usr/local/maven/maven_repository/error/spring-/unknown/spring--unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar:///usr/local/maven/maven_repository/error/spring-/unknown/spring--unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar:///usr/local/maven/maven_repository/error/spring-/unknown/spring--unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
