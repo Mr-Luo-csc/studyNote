@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="csc-Mybatis" />
-        <module name="csc-springIOC" />
+        <module name="csc-JDKProxy" />
         <module name="csc-springAopCase" />
         <module name="csc-springLogger" />
         <module name="csc-springCaseAboutCGLib" />
@@ -16,7 +16,7 @@
         <module name="csc-springHand" />
         <module name="csc-springAOP" />
         <module name="csc-springCode" />
-        <module name="csc-JDKProxy" />
+        <module name="csc-springIOC" />
         <module name="csc-springLoggerFiveAndMybatis" />
       </profile>
     </annotationProcessing>
