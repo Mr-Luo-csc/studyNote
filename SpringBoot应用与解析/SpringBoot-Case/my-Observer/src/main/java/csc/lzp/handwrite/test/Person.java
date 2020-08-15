@@ -1,4 +1,4 @@
-package csc.lzp.test;
+package csc.lzp.handwrite.test;
 
 /**
  * @Description: 模拟Java中的builder模式、自己的见解,可能有出入

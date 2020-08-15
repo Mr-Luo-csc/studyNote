@@ -1,4 +1,4 @@
-package csc.lzp.event;
+package csc.lzp.handwrite.event;
 
 /**
  * @Description: 电影事件

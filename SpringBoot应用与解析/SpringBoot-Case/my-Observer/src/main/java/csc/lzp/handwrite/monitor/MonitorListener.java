@@ -1,6 +1,6 @@
-package csc.lzp.monitor;
+package csc.lzp.handwrite.monitor;
 
-import csc.lzp.event.MovieEvent;
+import csc.lzp.handwrite.event.MovieEvent;
 
 /**
  * @Description: 电影监听器

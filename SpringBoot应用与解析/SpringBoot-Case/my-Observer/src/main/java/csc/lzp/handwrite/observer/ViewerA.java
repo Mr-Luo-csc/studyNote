@@ -1,7 +1,7 @@
-package csc.lzp.observer;
+package csc.lzp.handwrite.observer;
 
-import csc.lzp.event.MovieEvent;
-import csc.lzp.monitor.MonitorListener;
+import csc.lzp.handwrite.event.MovieEvent;
+import csc.lzp.handwrite.monitor.MonitorListener;
 
 /**
  * @Description: 观影人A

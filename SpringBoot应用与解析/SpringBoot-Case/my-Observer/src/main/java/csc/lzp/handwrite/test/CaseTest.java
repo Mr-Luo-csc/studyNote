@@ -1,8 +1,8 @@
-package csc.lzp.test;
+package csc.lzp.handwrite.test;
 
-import csc.lzp.observed.Movie;
-import csc.lzp.observer.ViewerA;
-import csc.lzp.observer.ViewerB;
+import csc.lzp.handwrite.observed.Movie;
+import csc.lzp.handwrite.observer.ViewerA;
+import csc.lzp.handwrite.observer.ViewerB;
 
 /**
  * @Description: 测试手写的观察者模式案例

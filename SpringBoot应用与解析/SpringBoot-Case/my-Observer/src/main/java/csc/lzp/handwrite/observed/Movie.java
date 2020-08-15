@@ -1,7 +1,7 @@
-package csc.lzp.observed;
+package csc.lzp.handwrite.observed;
 
-import csc.lzp.event.MovieEvent;
-import csc.lzp.monitor.MonitorListener;
+import csc.lzp.handwrite.event.MovieEvent;
+import csc.lzp.handwrite.monitor.MonitorListener;
 
 import java.util.ArrayList;
 import java.util.List;
