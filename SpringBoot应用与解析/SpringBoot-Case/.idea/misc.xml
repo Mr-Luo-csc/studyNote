@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/spring-web-socket/pom.xml" />
         <option value="$PROJECT_DIR$/spring-p2p-communication/pom.xml" />
         <option value="$PROJECT_DIR$/my-Observer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-Observer/pom.xml" />
       </list>
     </option>
   </component>

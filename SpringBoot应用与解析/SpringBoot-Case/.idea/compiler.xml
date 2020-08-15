@@ -7,18 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-uploadFile" />
-        <module name="my-Observer" />
-        <module name="spring-web-socket" />
         <module name="spring-web-mvc" />
         <module name="spring-p2p-communication" />
+        <module name="spring-Observer" />
+        <module name="spring-web-socket" />
+        <module name="my-Observer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="my-Observer" target="8" />
-      <module name="spring-p2p-communication" target="8" />
-      <module name="spring-uploadFile" target="8" />
-      <module name="spring-web-mvc" target="8" />
-      <module name="spring-web-socket" target="8" />
+      <module name="my-Observer" target="1.8" />
+      <module name="spring-Observer" target="1.8" />
+      <module name="spring-p2p-communication" target="1.8" />
+      <module name="spring-uploadFile" target="1.8" />
+      <module name="spring-web-mvc" target="1.8" />
+      <module name="spring-web-socket" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

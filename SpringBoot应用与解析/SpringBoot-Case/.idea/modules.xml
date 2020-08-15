@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/my-Observer/my-Observer.iml" filepath="$PROJECT_DIR$/my-Observer/my-Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-Observer/spring-Observer.iml" filepath="$PROJECT_DIR$/spring-Observer/spring-Observer.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-p2p-communication/spring-p2p-communication.iml" filepath="$PROJECT_DIR$/spring-p2p-communication/spring-p2p-communication.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-uploadFile/spring-uploadFile.iml" filepath="$PROJECT_DIR$/spring-uploadFile/spring-uploadFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web-mvc/spring-web-mvc.iml" filepath="$PROJECT_DIR$/spring-web-mvc/spring-web-mvc.iml" />
