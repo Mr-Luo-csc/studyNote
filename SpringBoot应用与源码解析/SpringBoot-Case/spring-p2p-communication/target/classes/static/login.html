@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>登录窗口</title>
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/jquery.js"></script>
+    <script src="/layui/layui.js"></script>
+</head>
+<body>
+<div id="loginForm" style="width: 500px">
+    <form class="layui-form" action="/login" method="post">
+        <div class="layui-form-item" style="padding-top:10px;">
+            <label class="layui-form-label">用戶名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入用戶名"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码框</label>
+            <div class="layui-input-inline">
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" id="luban" lay-submit lay-filter="luban">登录</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+
+<script>
+    layui.use('layer', function () {
+        layer.open({
+            type: 1,
+            content: $('#loginForm'),
+            maxWidth: 360
+        });
+    });
+</script>
+
+</html>

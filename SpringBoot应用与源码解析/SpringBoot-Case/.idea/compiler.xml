@@ -9,6 +9,7 @@
         <module name="spring-uploadFile" />
         <module name="spring-web-mvc" />
         <module name="spring-p2p-communication" />
+        <module name="spring-mvc" />
         <module name="spring-Observer" />
         <module name="spring-web-socket" />
         <module name="my-Observer" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="my-Observer" target="1.8" />
+      <module name="spring-mvc" target="1.8" />
       <module name="spring-Observer" target="1.8" />
       <module name="spring-p2p-communication" target="1.8" />
       <module name="spring-uploadFile" target="1.8" />
