@@ -25,7 +25,7 @@ public class SpringApplicationRunClass {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(1234);
 
-        //todo contextPath-表示项目路径 docBase-表示前端页面路径(可以指定外部的)
+        //todo contextPath-表示tomcat的访问路径 docBase-表示项目的web目录(可以指定外部的)
         Context context = tomcat.addContext("/", base.getAbsolutePath());
 
         //Servlet中传springWeb上下文环境
