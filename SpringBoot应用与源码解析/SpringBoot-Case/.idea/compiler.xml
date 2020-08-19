@@ -11,6 +11,7 @@
         <module name="spring-p2p-communication" />
         <module name="spring-mvc" />
         <module name="spring-Observer" />
+        <module name="spring-mvc-case" />
         <module name="spring-web-socket" />
         <module name="my-Observer" />
       </profile>
@@ -18,6 +19,8 @@
     <bytecodeTargetLevel target="8">
       <module name="my-Observer" target="1.8" />
       <module name="spring-mvc" target="1.8" />
+      <module name="spring-mvc-case" target="1.8" />
+      <module name="spring-mvc-scene" target="1.8" />
       <module name="spring-Observer" target="1.8" />
       <module name="spring-p2p-communication" target="1.8" />
       <module name="spring-uploadFile" target="1.8" />
