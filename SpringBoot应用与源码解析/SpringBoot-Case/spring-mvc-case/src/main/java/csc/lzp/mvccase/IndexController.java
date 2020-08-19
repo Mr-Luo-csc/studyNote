@@ -17,8 +17,8 @@ public class IndexController {
 
     @RequestMapping("/dance")
     @ResponseBody//表示返回json数据 Spring中有很多[处理器],两大类:处理转发页面还是返回数据
-    public Map<String, String> dance() {
-        System.out.println("======dance======");
+    public Map<String, String> dance(String danceType) {
+        System.out.println("dance接口...正在调用,入参为: " + danceType);
         Map<String, String> data = new HashMap<>();
         data.put("Locking", "MrLuo");
         return data;
