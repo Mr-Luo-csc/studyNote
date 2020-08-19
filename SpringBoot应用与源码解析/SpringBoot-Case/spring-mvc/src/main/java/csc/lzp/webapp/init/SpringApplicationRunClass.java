@@ -23,7 +23,7 @@ public class SpringApplicationRunClass {
         File base = new File(System.getProperty("java.io.tmpdir"));
 
         Tomcat tomcat = new Tomcat();
-        tomcat.setPort(1234);
+        tomcat.setPort(8080);
 
         //todo contextPath-表示tomcat的访问路径 docBase-表示项目的web目录(可以指定外部的)
         Context context = tomcat.addContext("/", base.getAbsolutePath());
