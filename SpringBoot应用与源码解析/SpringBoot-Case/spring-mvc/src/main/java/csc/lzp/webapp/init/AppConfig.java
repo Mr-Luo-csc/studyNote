@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    //@Autowired
+    //@Autowired todo 该注解加在方法上的作用是什么?
     public MyParser myParser() {
         return new MyParser();
     }
