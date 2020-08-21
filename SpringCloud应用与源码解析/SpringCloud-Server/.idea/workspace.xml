@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a951a071-07df-4281-8fba-b6e28336ee6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/lzp/user/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/lzp/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/lzp/user/model/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +33,13 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -54,10 +69,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/com/lzp/user/model" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user/src/main/java/com/lzp/user/model" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -69,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597998884680</updated>
-      <workItem from="1597998886733" duration="303000" />
+      <workItem from="1597998886733" duration="2952000" />
     </task>
     <servers />
   </component>
@@ -81,9 +102,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597999028396" />
-    <state x="149" y="147" key="new project wizard" timestamp="1597998968064">
+    <state x="149" y="147" key="new project wizard" timestamp="1597999479652">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="149" y="147" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1597998968064" />
+    <state x="149" y="147" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1597999479652" />
   </component>
 </project>
