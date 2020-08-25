@@ -12,6 +12,7 @@
         <module>user</module>
         <module>power</module>
         <module>order</module>
+        <module>eureka</module>
     </modules>
 
     <parent>
