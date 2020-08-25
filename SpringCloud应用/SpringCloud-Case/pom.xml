@@ -6,7 +6,18 @@
 
     <groupId>com.luozhipeng</groupId>
     <artifactId>SpringCloud-Case</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>user</module>
+        <module>power</module>
+        <module>order</module>
+    </modules>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.2.RELEASE</version>
+    </parent>
 
 </project>
