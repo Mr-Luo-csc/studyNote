@@ -10,6 +10,7 @@
         <module name="user" />
         <module name="power" />
         <module name="order" />
+        <module name="power1" />
         <module name="eureka" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="eureka" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="power" options="-parameters" />
+      <module name="power1" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>
