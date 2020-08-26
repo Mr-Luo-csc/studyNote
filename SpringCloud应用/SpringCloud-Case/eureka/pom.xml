@@ -23,7 +23,7 @@
         </dependency>
     </dependencies>
 
-    <!--todo springboot 与 springCloud的版本要一致-->
+    <!--todo springboot 与 springCloud的版本要一致 组件的版本也要与springCloud一致-->
     <dependencyManagement>
         <dependencies>
             <dependency>
