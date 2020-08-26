@@ -14,6 +14,8 @@
         <module>power1</module>
         <module>order</module>
         <module>eureka3000</module>
+        <module>eureka3001</module>
+        <module>eureka3002</module>
     </modules>
 
     <parent>

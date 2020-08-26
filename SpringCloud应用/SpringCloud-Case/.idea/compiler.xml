@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="user" />
-        <module name="power" />
         <module name="eureka3000" />
-        <module name="order" />
         <module name="power1" />
+        <module name="order" />
+        <module name="eureka3002" />
+        <module name="eureka3001" />
+        <module name="power" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
@@ -19,6 +21,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka3000" options="-parameters" />
+      <module name="eureka3001" options="-parameters" />
+      <module name="eureka3002" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="power" options="-parameters" />
       <module name="power1" options="-parameters" />
