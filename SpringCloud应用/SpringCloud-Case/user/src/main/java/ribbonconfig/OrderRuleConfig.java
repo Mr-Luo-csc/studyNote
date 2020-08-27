@@ -1,7 +1,7 @@
 package ribbonconfig;
 
+import com.lzp.user.irule.MyiRule;
 import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Configuration;
  * @Date: 2020/8/27
  **/
 @Configuration
-public class PowerConfig {
+public class OrderRuleConfig {
 
     @Bean
     public IRule iRule() {
-        return new RandomRule();
+        return new MyiRule();
     }
 }
