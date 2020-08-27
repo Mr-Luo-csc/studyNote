@@ -17,6 +17,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--netflix公司集成了ribbon-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
