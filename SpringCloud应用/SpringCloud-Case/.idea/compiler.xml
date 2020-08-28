@@ -10,6 +10,7 @@
         <module name="user" />
         <module name="power1" />
         <module name="order" />
+        <module name="z-load-balance" />
         <module name="eureka3002" />
         <module name="eureka3001" />
         <module name="eureka3000" />
