@@ -35,9 +35,9 @@ public class ServerIps {
         WEIGHT_LIST.put("192.168.0.5", 3);
         WEIGHT_LIST.put("192.168.0.6", 7);
         WEIGHT_LIST.put("192.168.0.7", 6);
-        WEIGHT_LIST.put("192.168.0.8", 6);
-        WEIGHT_LIST.put("192.168.0.9", 9);
-        WEIGHT_LIST.put("192.168.0.10", 9);
+        WEIGHT_LIST.put("192.168.0.8", 4);
+        WEIGHT_LIST.put("192.168.0.9", 5);
+        WEIGHT_LIST.put("192.168.0.10", 5);
     }
 
 }

@@ -10,6 +10,7 @@ import java.util.Random;
  * @Author: luozhipeng
  * @Date: 2020/8/28
  **/
+//todo 根据权重来分区间
 public class WeightRandomV2 {
 
     public static String getServer() {
@@ -21,29 +22,39 @@ public class WeightRandomV2 {
             Integer weight = (Integer) weights[i];
             totalWeight += weight;
 
+            //连续的两个权重是否相等
             if (sameWeight && i > 0 && !weight.equals(weights[i - 1])) {
                 sameWeight = false;
             }
         }
 
+        System.out.println("总权重: " + totalWeight);
         Random random = new Random();
         int randomPos = random.nextInt(totalWeight);
+        System.out.println("随机权重: " + randomPos);
 
         if (!sameWeight) {
             for (String ip : ServerIps.WEIGHT_LIST.keySet()) {
+                //value代表权重
                 Integer value = ServerIps.WEIGHT_LIST.get(ip);
-
+                System.out.println("当前IP对应的权重: " + value);
+                //当前ip对应的权重 大于 随机的权重的话 直接返回当前的ip地址
                 if (randomPos < value) {
-                    return ip;
+                    return ip + "===============权重不相等的情况==============";
                 }
                 randomPos = randomPos - value;
             }
         }
 
         String result = (String) ServerIps.WEIGHT_LIST.keySet().toArray()[new Random().nextInt(ServerIps.WEIGHT_LIST.size())];
-        return result;
+        return result + "==============权重相等的情况===============";
     }
 
+    /******************************/
+    /** -----5---8--10   一个7进来 */
+    /** 7<5? false => 7-5=2       */
+    /** 2<5? true => return       */
+    /******************************/
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             System.out.println(getServer());
