@@ -42,6 +42,7 @@ public class WeightRoundRobin {
             }
         }
 
+        //todo 权重相等走的逻辑
         String ip = null;
 
         synchronized (pos) {
