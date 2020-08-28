@@ -24,6 +24,7 @@ public class WeightRandomV2 {
 
             //连续的两个权重是否相等
             //todo 如果相等,不会进if,如果已经是false(也就是修改之后),以后的循环都不会进if
+            //todo 以下考虑的是: 权重都相等的情况
             if (sameWeight && i > 0 && !weight.equals(weights[i - 1])) {
                 sameWeight = false;
             }
