@@ -1,7 +1,9 @@
 package com.lzp.balance.constant;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description: 模拟服务器
@@ -22,5 +24,20 @@ public class ServerIps {
             "192.168.0.9",
             "192.168.0.10"
     );
+
+    public static final Map<String, Integer> WEIGHT_LIST = new HashMap<String, Integer>();
+
+    static {
+        WEIGHT_LIST.put("192.168.0.1", 1);
+        WEIGHT_LIST.put("192.168.0.2", 9);
+        WEIGHT_LIST.put("192.168.0.3", 2);
+        WEIGHT_LIST.put("192.168.0.4", 8);
+        WEIGHT_LIST.put("192.168.0.5", 3);
+        WEIGHT_LIST.put("192.168.0.6", 7);
+        WEIGHT_LIST.put("192.168.0.7", 6);
+        WEIGHT_LIST.put("192.168.0.8", 6);
+        WEIGHT_LIST.put("192.168.0.9", 9);
+        WEIGHT_LIST.put("192.168.0.10", 9);
+    }
 
 }
