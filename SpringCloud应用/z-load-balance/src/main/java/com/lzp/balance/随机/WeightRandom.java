@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @Description: 权重随机算法
+ * @Description: 权重随机算法 todo pos对应position位置 various各种各样的方式[V2代表方式二]
  * @Author: luozhipeng
  * @Date: 2020/8/28
  **/
