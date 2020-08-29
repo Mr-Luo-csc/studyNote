@@ -29,9 +29,22 @@ public class WeightRoundRobinV2 {
 
         //找出currentWeight的最大值
         Weight maxCurrentWeight = null;
+        for (Weight weight : weightMap.values()) {
+            if (maxCurrentWeight == null || weight.getCurrentWeight() > maxCurrentWeight.getCurrentWeight()) {
+                maxCurrentWeight = weight;
+            }
+        }
 
+        //将maxCurrentWeight减去总权重和
+        maxCurrentWeight.setCurrentWeight(maxCurrentWeight.getCurrentWeight() - totalWeight);
 
-        return null;
+        //所有的IP的currentWeight统一加上原始权重
+        for (Weight weight : weightMap.values()) {
+            weight.setCurrentWeight(weight.getCurrentWeight() + weight.getWeight());
+        }
+
+        //返回maxCurrentWeight所对应的IP
+        return maxCurrentWeight.getIp();
     }
 
     public static void main(String[] args) {
