@@ -25,7 +25,7 @@ public class ServerIps {
     public static final Map<String, Integer> WEIGHT_LIST = new HashMap<String, Integer>();
 
     static {
-       /* WEIGHT_LIST.put("192.168.0.1", 1);
+        WEIGHT_LIST.put("192.168.0.1", 1);
         WEIGHT_LIST.put("192.168.0.2", 9);
         WEIGHT_LIST.put("192.168.0.3", 2);
         WEIGHT_LIST.put("192.168.0.4", 8);
@@ -34,12 +34,11 @@ public class ServerIps {
         WEIGHT_LIST.put("192.168.0.7", 6);
         WEIGHT_LIST.put("192.168.0.8", 4);
         WEIGHT_LIST.put("192.168.0.9", 5);
-        WEIGHT_LIST.put("192.168.0.10", 5)*/
-        ;
+        WEIGHT_LIST.put("192.168.0.10", 5);
 
-        WEIGHT_LIST.put("A", 5);
+       /* WEIGHT_LIST.put("A", 5);
         WEIGHT_LIST.put("B", 1);
-        WEIGHT_LIST.put("C", 1);
+        WEIGHT_LIST.put("C", 1);*/
     }
 
     public static final Map<String, Integer> ACTIVITY_LIST = new LinkedHashMap<>();

@@ -31,14 +31,44 @@ public class LeastActive {
                 //过滤出对应的IP和权重
                 Map<String, Integer> weightList = new LinkedHashMap<>();
                 //todo
-               /* ServerIps.WEIGHT_LIST.forEach(() -> {
+                ServerIps.WEIGHT_LIST.forEach((ip, weight) -> {
+                    if (minActivityIps.contains(ip)) {
+                        weightList.put(ip, ServerIps.WEIGHT_LIST.get(ip));
+                    }
+                });
 
-                });*/
+                int totalWeight = 0;
+                boolean sameWeight = true;
+                Object[] weights = weightList.values().toArray();
+
+                for (int i = 0; i < weights.length; i++) {
+                    Integer weight = (Integer) weights[i];
+                    totalWeight += weight;
+                    if (sameWeight && i > 1 && !weight.equals(weights[i - 1])) {
+                        sameWeight = false;
+                    }
+                }
+
+                Random random = new Random();
+                int randomPos = random.nextInt(totalWeight);
+
+                if (!sameWeight) {
+                    for (String ip : weightList.keySet()) {
+                        Integer value = weightList.get(ip);
+                        if (randomPos < value) {
+                            return ip;
+                        }
+                        randomPos = randomPos - value;
+                    }
+                }
+
+                return (String) weightList.keySet().toArray()[new Random().nextInt(weightList.size())];
+            } else {
+                return minActivityIps.get(0);
             }
+        } else {
+            return (String) ServerIps.WEIGHT_LIST.keySet().toArray()[new Random().nextInt(ServerIps.WEIGHT_LIST.size())];
         }
-
-
-        return null;
     }
 
     public static void main(String[] args) {
