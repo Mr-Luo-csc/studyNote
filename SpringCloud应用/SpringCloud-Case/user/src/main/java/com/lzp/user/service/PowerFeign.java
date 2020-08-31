@@ -2,6 +2,7 @@ package com.lzp.user.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Description:
@@ -14,5 +15,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface PowerFeign {
 
     @RequestMapping("/getPower.do")
-    Object getPower(String name);
+    Object getPower(@RequestParam String name);
 }

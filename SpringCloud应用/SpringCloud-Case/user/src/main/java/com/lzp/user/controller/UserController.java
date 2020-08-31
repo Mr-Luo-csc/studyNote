@@ -48,7 +48,7 @@ public class UserController {
         return R.success("操作成功[Feign]", data);
     }
 
-    //======失败时调用的方法 todo 参数可以打印
+    //======失败时调用的方法 todo 参数可以打印、注意参数要一致
     public R fallBackMethod(String name) {
         System.out.println(name);
         return R.error("降级信息");
