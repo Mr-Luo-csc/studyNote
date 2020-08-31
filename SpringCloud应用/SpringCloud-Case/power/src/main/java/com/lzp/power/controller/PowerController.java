@@ -15,7 +15,7 @@ import java.util.Map;
 public class PowerController {
 
     @RequestMapping("/getPower.do")
-    public Object getPoser(String name) throws Exception {
+    public Object getPower(String name) throws Exception {
         Map<String, Object> map = new HashMap<>();
         map.put("city", "长沙HOOK");
         if (name == null) {

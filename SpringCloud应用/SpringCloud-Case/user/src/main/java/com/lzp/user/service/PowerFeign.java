@@ -14,5 +14,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface PowerFeign {
 
     @RequestMapping("/getPower.do")
-    Object getPower();
+    Object getPower(String name);
 }

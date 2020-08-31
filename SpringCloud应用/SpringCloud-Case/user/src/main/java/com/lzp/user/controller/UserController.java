@@ -43,7 +43,8 @@ public class UserController {
     @RequestMapping("/getPowerByFeign.do")
     @HystrixCommand(fallbackMethod = "fallBackMethod")
     public R getPowerByFeign(String name) {
-        Object data = feign.getPower();
+        System.out.println(name);
+        Object data = feign.getPower(name);
         return R.success("操作成功[Feign]", data);
     }
 
