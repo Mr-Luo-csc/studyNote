@@ -15,7 +15,7 @@ import ribbonconfig.PowerRuleConfig;
  * @Date: 2020/8/25
  **/
 @SpringBootApplication
-@EnableFeignClients(basePackages = "com.lzp.user.service")
+@EnableFeignClients(basePackages = {"com.lzp.user.service","com.lzp.user.fallbackclass"})
 @RibbonClients({
         @RibbonClient(name = "SERVER-ORDER", configuration = OrderRuleConfig.class),
         @RibbonClient(name = "SERVER-POWER", configuration = PowerRuleConfig.class)
