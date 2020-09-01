@@ -48,6 +48,7 @@ public class UserController {
 
     //======使用feign调用power模块 todo 添加方法降解
     @RequestMapping("/getPowerByFeign.do")
+    @HystrixCommand(fallbackMethod = "fallBackMethod")
     public R getPowerByFeign(String name) {
         System.out.println(name);
         Object data = feign.getPower(name);
