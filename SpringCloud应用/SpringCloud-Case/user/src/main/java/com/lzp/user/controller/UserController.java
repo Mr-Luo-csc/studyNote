@@ -3,7 +3,9 @@ package com.lzp.user.controller;
 import com.lzp.user.resultmodel.R;
 import com.lzp.user.service.PowerFeign;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -35,13 +37,17 @@ public class UserController {
 
     //======调用power模块
     @RequestMapping("/getPower.do")
+    @HystrixCommand(fallbackMethod = "fallBackMethod",
+            threadPoolKey = "power",
+            groupKey = "commonThreadPoolGroup",
+            threadPoolProperties = {@HystrixProperty(name = "coreSize", value = "5"),
+                    @HystrixProperty(name = "maxQueueSize", value = "2")})//todo maxQueueSize可等待的最大任务数
     public R getPower() {
         return R.success("操作成功[RestTemplate]", restTemplate.getForObject("http://localhost:6000/getPower.do", Object.class));
     }
 
     //======使用feign调用power模块 todo 添加方法降解
     @RequestMapping("/getPowerByFeign.do")
-    @HystrixCommand(fallbackMethod = "fallBackMethod")
     public R getPowerByFeign(String name) {
         System.out.println(name);
         Object data = feign.getPower(name);
