@@ -1,0 +1,4 @@
+#feign是支持hystrix的
+feign:
+  hystrix:
+    enabled: true
