@@ -22,6 +22,8 @@ public class PowerController {
             //如果没有传参数,我们模拟抛出一个异常
             throw new Exception();
         }
+        //todo 模拟并发,多个线程访问资源
+        Thread.sleep(1000 * 10);
         return map;
     }
 
