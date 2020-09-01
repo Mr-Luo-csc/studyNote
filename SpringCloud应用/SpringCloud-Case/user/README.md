@@ -29,3 +29,4 @@ _解决方案:_
 **feign整合hystrix的使用**
 
 - yml中配置开启feign对hystrix的支持,高版本的springCloud默认把这个支持关闭了
+- feign的方法降解粒度是微服务级别的
