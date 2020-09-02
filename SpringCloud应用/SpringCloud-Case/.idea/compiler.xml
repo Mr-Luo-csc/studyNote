@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="user" />
+        <module name="zuul" />
         <module name="power1" />
         <module name="z-load-balance" />
         <module name="order" />
@@ -28,6 +29,7 @@
       <module name="power" options="-parameters" />
       <module name="power1" options="-parameters" />
       <module name="user" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>
