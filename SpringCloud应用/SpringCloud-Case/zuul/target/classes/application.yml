@@ -15,11 +15,16 @@ spring:
   application:
     name: zuul #此实例注册到eureka服务端的name
 
-#zuul:
-#  prefix: /api
-#  ignored-services: "*"
-#  #  stripPrefix: false
-#  routes:
-#    power:
-#      serviceId: zuul-server
-#      path: /zuul/**
+zuul:
+  prefix: /api
+  strip-prefix: false #防止[/api]重复
+  ignored-services: "*"
+  routes:
+    mypower:
+    serviceId: server-power
+    path: /power/**
+
+#  如果我们需要使过滤器不生效,如下配置就好了
+#  LogFilter:
+#    pre:
+#      disable: true
