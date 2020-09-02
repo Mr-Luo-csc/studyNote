@@ -23,7 +23,7 @@ public class PowerController {
             throw new Exception();
         }
         //todo 模拟并发,多个线程访问资源
-        Thread.sleep(1000 * 10);
+        //Thread.sleep(1000 * 10);
         return map;
     }
 
