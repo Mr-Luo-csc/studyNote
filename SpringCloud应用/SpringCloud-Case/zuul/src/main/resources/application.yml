@@ -17,7 +17,7 @@ spring:
 
 zuul:
   prefix: /api
-  strip-prefix: false #防止[/api]重复
+  strip-prefix: false #防止[/api]被省略
   ignored-services: "*"
   routes:
     mypower:
