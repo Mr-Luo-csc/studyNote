@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
  **/
 //todo 微服务级别的退回;不能指定到某个接口[controller]
 @Component
-public class MyFallbackProvider implements FallbackProvider {
+public class PowerFallbackProvider implements FallbackProvider {
 
     @Override
     public String getRoute() {
-        return "server-power";
+        return "power";
     }
 
     //======回退的逻辑回调的方法
