@@ -12,6 +12,7 @@
         <module name="power1" />
         <module name="z-load-balance" />
         <module name="order" />
+        <module name="zuul9002" />
         <module name="eureka3000" />
         <module name="power" />
       </profile>
