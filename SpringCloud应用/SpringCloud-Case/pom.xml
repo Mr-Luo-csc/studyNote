@@ -17,6 +17,8 @@
         <module>eureka3001</module>
         <module>eureka3002</module>
         <module>zuul</module>
+        <module>zuul9001</module>
+        <module>zuul9002</module>
     </modules>
 
     <parent>
