@@ -24,7 +24,8 @@ public class LogFilter extends ZuulFilter {
 
     @Override
     public int filterOrder() {
-        return FilterConstants.PRE_DECORATION_FILTER_ORDER;
+        //todo 什么时候+1,想拿到更多资源的时候
+        return FilterConstants.PRE_DECORATION_FILTER_ORDER + 1;
     }
 
     @Override
