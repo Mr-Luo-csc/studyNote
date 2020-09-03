@@ -21,6 +21,7 @@ import java.io.InputStream;
 @Component
 public class PowerFallbackProvider implements FallbackProvider {
 
+    //======todo 这里截取的是微服务的名称?
     @Override
     public String getRoute() {
         return "server-power";

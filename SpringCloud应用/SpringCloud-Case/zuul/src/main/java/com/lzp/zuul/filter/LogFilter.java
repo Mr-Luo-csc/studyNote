@@ -14,12 +14,12 @@ import javax.servlet.http.HttpServletRequest;
  * @Date: 2020/9/2
  **/
 @Component
+//todo Pre类型的过滤器,日志打印
 public class LogFilter extends ZuulFilter {
-
 
     @Override
     public String filterType() {
-        return FilterConstants.ROUTE_TYPE;
+        return FilterConstants.PRE_TYPE;
     }
 
     @Override
@@ -38,8 +38,9 @@ public class LogFilter extends ZuulFilter {
         RequestContext currentContext = RequestContext.getCurrentContext();
         HttpServletRequest request = currentContext.getRequest();
         String remoteAddr = request.getRemoteAddr();
-        String uri = request.getRequestURI();
-        System.out.println("访问者IP: " + remoteAddr + "访问地址: " + uri);
+        //todo ConcurrentMap
+        String s = currentContext.get(FilterConstants.REQUEST_URI_KEY).toString();
+        System.out.println("访问者IP: " + remoteAddr + "访问地址: " + s);
         return null;
     }
 }
