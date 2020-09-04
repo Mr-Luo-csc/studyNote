@@ -16,8 +16,6 @@ spring:
     name: zuul-server
 
 zuul:
-  prefix: /api
-  strip-prefix: false #带前缀
   ignored-services: "*"
   routes:
     mypower:

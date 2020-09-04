@@ -16,9 +16,7 @@ spring:
     name: zuul-server #此实例注册到eureka服务端的name
 
 zuul:
-  prefix: /api
   ignored-services: "*"
-  strip-prefix: false
   routes:
     mypower:
       serviceId: server-power

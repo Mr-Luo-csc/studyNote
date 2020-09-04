@@ -20,9 +20,9 @@ zuul:
   strip-prefix: false #防止[/api]被省略
   ignored-services: "*"
   routes:
-    mypower:
+    zuul:
       serviceId: zuul-server
-      path: /power/**
+      path: /zuul/**
 
 #  如果我们需要使过滤器不生效,如下配置就好了
 #  LogFilter:
