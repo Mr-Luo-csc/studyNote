@@ -13,7 +13,9 @@
         <module name="z-load-balance" />
         <module name="order" />
         <module name="zuul9002" />
+        <module name="zuul9001" />
         <module name="eureka3000" />
+        <module name="hystrix-dashbord" />
         <module name="power" />
       </profile>
     </annotationProcessing>
@@ -27,6 +29,7 @@
       <module name="eureka3000" options="-parameters" />
       <module name="eureka3001" options="-parameters" />
       <module name="eureka3002" options="-parameters" />
+      <module name="hystrix-dashbord" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="power" options="-parameters" />
       <module name="power1" options="-parameters" />
