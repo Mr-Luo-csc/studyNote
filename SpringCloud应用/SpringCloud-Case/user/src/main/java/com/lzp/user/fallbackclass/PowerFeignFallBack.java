@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @Author: luozhipeng
  * @Date: 2020/9/1
  **/
-//@Component
+@Component
 //todo @Component这个注解一定需要添加[或者]在@EnableFeignClients注解中指定路径;fallBackMethod的优先级大于fallBackClass
 public class PowerFeignFallBack implements PowerFeign {
 

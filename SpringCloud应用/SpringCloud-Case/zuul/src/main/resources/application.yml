@@ -21,7 +21,7 @@ zuul:
   ignored-services: "*"
   routes:
     mypower:
-      serviceId: server-power
+      serviceId: zuul-server
       path: /power/**
 
 #  如果我们需要使过滤器不生效,如下配置就好了

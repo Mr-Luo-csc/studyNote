@@ -28,3 +28,10 @@ eureka:
 spring:
   application:
     name: client-user #此实例注册到eureka服务端的name
+
+#打开actuator项目的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
