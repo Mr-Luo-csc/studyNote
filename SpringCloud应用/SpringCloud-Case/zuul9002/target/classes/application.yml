@@ -21,3 +21,4 @@ zuul:
     mypower:
       serviceId: server-power
       path: /power/**
+  strip-prefix: false
