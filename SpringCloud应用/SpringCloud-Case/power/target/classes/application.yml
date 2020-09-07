@@ -14,3 +14,10 @@ eureka:
 spring:
   application:
     name: server-power #此实例注册到eureka服务端的name
+
+  #sleuth && zipkin的配置
+  zipkin:
+    base-url: http://localhost:9999 #zipkin-server的地址
+  sleuth:
+    sampler:
+      probability: 1.0 #采样的比例,这里设置成全采样
