@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:Mr-Luo-csc/springcloud-config.git
+          search-paths: "*" #全匹配
+          clone-on-start: true #懒加载
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka3000.com:3000/eureka/
+    instance:
+      instance-id: config-1
+      prefer-ip-address: true
+      leaseRenewalIntervalInSeconds: 1
+      leaseExpirationDurationInSeconds: 3
