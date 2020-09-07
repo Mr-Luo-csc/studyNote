@@ -1,4 +1,4 @@
-# springCloud组件Hystrix-Dashbord
+# springCloud组件Hystrix-Dashboard
 
 **仪表盘**
 
