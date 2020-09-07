@@ -7,7 +7,16 @@ management:
 
 server:
   port: 9999
-  
+
 spring:
   main:
-    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+    allow-bean-definition-overriding: true #当遇到同样名字的时候,是否允许覆盖注册
+
+#持久化配置
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      cluster: elasticsearch
+      hosts: http://localhost:9200
+      index: zipkin
