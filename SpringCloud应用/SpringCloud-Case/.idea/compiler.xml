@@ -34,6 +34,7 @@
       <module name="power" options="-parameters" />
       <module name="power1" options="-parameters" />
       <module name="user" options="-parameters" />
+      <module name="zipkin-server" options="-parameters" />
       <module name="zuul" options="-parameters" />
       <module name="zuul9001" options="-parameters" />
       <module name="zuul9002" options="-parameters" />

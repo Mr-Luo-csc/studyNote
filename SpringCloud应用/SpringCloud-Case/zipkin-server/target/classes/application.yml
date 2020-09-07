@@ -1,0 +1,13 @@
+#zipkin2.7.x之后不支持自定义zipkin-server,需要使用的话添加以下配置 todo [会有BUG]
+management:
+  metrics:
+    web:
+      server:
+        autoTimeRequests: false
+
+server:
+  port: 9999
+  
+spring:
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
