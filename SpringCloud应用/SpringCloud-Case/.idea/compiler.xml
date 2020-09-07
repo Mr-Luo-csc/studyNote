@@ -26,6 +26,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
+      <module name="config-server1" options="-parameters" />
       <module name="eureka3000" options="-parameters" />
       <module name="eureka3001" options="-parameters" />
       <module name="eureka3002" options="-parameters" />
