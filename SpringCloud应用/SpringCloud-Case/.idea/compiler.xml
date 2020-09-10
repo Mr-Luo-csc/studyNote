@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user" />
         <module name="zuul" />
+        <module name="config-server" />
         <module name="power1" />
         <module name="z-load-balance" />
         <module name="order" />
@@ -17,6 +18,7 @@
         <module name="zuul9001" />
         <module name="eureka3000" />
         <module name="power" />
+        <module name="config-server1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
