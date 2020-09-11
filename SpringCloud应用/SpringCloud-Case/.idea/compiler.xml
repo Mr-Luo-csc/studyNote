@@ -9,16 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user" />
         <module name="zuul" />
+        <module name="config-server1" />
         <module name="config-server" />
         <module name="power1" />
-        <module name="z-load-balance" />
         <module name="order" />
+        <module name="z-load-balance" />
         <module name="hystrix-dashboard" />
-        <module name="zuul9002" />
         <module name="zuul9001" />
         <module name="eureka3000" />
         <module name="power" />
-        <module name="config-server1" />
+        <module name="zuul9002" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
