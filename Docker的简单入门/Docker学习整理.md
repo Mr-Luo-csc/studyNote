@@ -6,7 +6,8 @@ Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级�
 ===
 - [Docker常用命令](#Docker常用命令)
 - [DockerFile常用指令](#DockerFile常用指令)
-- [其它](#其它)
+- [Docker的几类网络配置](#Docker的几类网络配置)
+- [Docker-Compose](#Docker-Compose)
 ------
 
 ## Docker常用命令
@@ -51,6 +52,13 @@ docker exec -it 容器名 /bin/bash
 - COPY
 - ...
 
-## 其它
+## Docker的几类网络配置
 
-- 
+- bridge
+- host
+- none
+- container
+
+## Docker-Compose
+
+**使用Docker Compose运行多个容器**
