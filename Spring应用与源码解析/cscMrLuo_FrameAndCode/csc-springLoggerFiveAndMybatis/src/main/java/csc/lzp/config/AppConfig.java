@@ -25,6 +25,7 @@ public class AppConfig {
 
         //配置日志实现 #TODO
         org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
+        //todo 这里强转有问题
         configuration.setLogImpl((Class<? extends Log>) Logger.class);
         sqlSessionFactoryBean.setConfiguration(configuration);
 
