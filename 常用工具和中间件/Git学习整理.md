@@ -25,9 +25,8 @@ git stash push -m <状态名>
 //查看
 git stash list
 //回退到某个状态(2种方式)
-git stash apply n <n表示的是某个状态的序号>
-
-git stash pop n <n表示的是某个状态的序号>
+方式一: git stash apply n <n表示的是某个状态的序号>
+方式二: git stash pop n <n表示的是某个状态的序号>
 //删除
 git stash drop n <n表示的是某个状态的序号>
 ```
