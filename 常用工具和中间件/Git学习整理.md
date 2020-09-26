@@ -16,3 +16,17 @@ git push origin --delete <branchName>
 ```shell script
 git remote add origin <github仓库地址>
 ```
+
+- 暂时保存当前代码状态
+
+```shell script
+//保存
+git stash push -m <状态名>
+//查看
+git stash list
+//回退到某个状态
+git stash apply n <n表示的是某个状态的序号>
+```
+
+
+
