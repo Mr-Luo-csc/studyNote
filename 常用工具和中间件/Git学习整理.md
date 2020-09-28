@@ -16,7 +16,6 @@ git push origin --delete <branchName>
 ```shell script
 git remote add origin <github仓库地址>
 ```
-
 - 暂时保存当前代码状态
 
 ```shell script
@@ -31,4 +30,8 @@ git remote add origin <github仓库地址>
 		git stash drop n <n表示的是某个状态的序号>
 5.查看删除的提交(结合git stash apply使用)
 		git fsck –lost-found
+```
+- 使用频率最高的
+```shell script
+git status
 ```
