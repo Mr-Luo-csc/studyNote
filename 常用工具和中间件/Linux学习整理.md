@@ -1,6 +1,13 @@
 ### 一、常用Linux命令
 
-- ～:表示根目录
+- 当前用户根目录
+```bash
+ cd ～
+```
+- 查看命令
+```bash
+ps -ef | grep redis
+```
 
 ### 二、Linux常识
 

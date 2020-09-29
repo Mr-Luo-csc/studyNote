@@ -14,3 +14,15 @@ set key value
 ```bash
 get key
 ```
+- 查看临时密码
+```bash
+config get requirepass
+
+设置临时密码
+config set requirepass <password>
+
+持久化密码
+config rewrite (可以将config set持久化到Redis配置文件中)
+
+设置永久密码的另一种操作,修改redis.conf配置文件的requirepass参数
+```
