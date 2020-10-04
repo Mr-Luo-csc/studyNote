@@ -26,3 +26,19 @@ config rewrite (可以将config set持久化到Redis配置文件中)
 
 设置永久密码的另一种操作,修改redis.conf配置文件的requirepass参数
 ```
+- 清库
+```bash
+清除当前库中的数据
+flushDB
+
+清除16个库中的数据
+flushALL 
+```
+------
+### Redis五大数据类型
+- String
+- List
+- Set
+- Hash
+- Zset
+
