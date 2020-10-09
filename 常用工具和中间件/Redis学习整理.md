@@ -32,7 +32,7 @@ config rewrite (可以将config set持久化到Redis配置文件中)
 flushDB
 
 清除16个库中的数据
-flushALL 
+flushALL
 ```
 ------
 ### Redis五大数据类型
