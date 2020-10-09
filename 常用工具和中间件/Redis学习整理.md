@@ -34,6 +34,12 @@ flushDB
 清除16个库中的数据
 flushALL
 ```
+- linux下启动redis实例、客户端连接操作
+```bash
+/usr/local/bin/redis-server + <要启动redis实例的配置文件路径>
+
+/usr/local/bin/redis-cli -h<ip> -p<port> -c<表示使用集群的方式连接>
+```
 ------
 ### Redis五大数据类型
 - String
