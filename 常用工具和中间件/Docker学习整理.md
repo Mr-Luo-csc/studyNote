@@ -8,6 +8,7 @@ Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级�
 - [DockerFile常用指令](#DockerFile常用指令)
 - [Docker的几类网络配置](#Docker的几类网络配置)
 - [Docker-Compose](#Docker-Compose)
+- [使用Docker时遇到的问题](#使用Docker时遇到的问题)
 ------
 
 ## Docker常用命令
@@ -62,3 +63,15 @@ docker exec -it 容器名 /bin/bash
 ## Docker-Compose
 
 **使用Docker Compose运行多个容器**
+
+## 使用Docker时遇到的问题
+
+- 问题一:docker: Error response from daemon故障
+
+```bash
+step1: pkill docker
+step2: iptables -t nat -F
+step3: ifconfig docker0 down
+step4: brctl delbr docker0
+step5: service docker restart
+```
