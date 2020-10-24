@@ -8,6 +8,10 @@
 ```bash
 ps -ef | grep redis
 ```
+- 创建一个新的空白文件
+```bash
+touch <fileName>
+```
 
 ### 二、Linux常识
 
