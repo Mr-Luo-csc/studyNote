@@ -1,5 +1,7 @@
 package com.lzp.rabbitmq.springboot.config;
 
+import com.lzp.rabbitmq.springboot.callback.MyConfirmCallBack;
+import com.lzp.rabbitmq.springboot.callback.MyReturnCallBack;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
@@ -48,6 +50,12 @@ public class RabbitMQConfig {
     public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
         //todo 注意:这个ConnectionFactory是使用JavaConfig方式配置连接的时候才需要传入的,如果是yml配置的连接的话是不需要的
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+        //开启mandatory模式(开启失败回调)
+        rabbitTemplate.setMandatory(true);
+        //指定失败回调接口的实现类
+        rabbitTemplate.setReturnCallback(new MyReturnCallBack());
+        //指定发送方确认模式的实现类
+        rabbitTemplate.setConfirmCallback(new MyConfirmCallBack());
         return rabbitTemplate;
     }
 }
