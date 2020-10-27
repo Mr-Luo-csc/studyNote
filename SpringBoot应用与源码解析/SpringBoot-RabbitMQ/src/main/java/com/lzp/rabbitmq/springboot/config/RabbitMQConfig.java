@@ -65,6 +65,8 @@ public class RabbitMQConfig {
         containerFactory.setConnectionFactory(connectionFactory);
         //这边设置消息确认方式:自动确认=变为=手动确认
         containerFactory.setAcknowledgeMode(AcknowledgeMode.MANUAL);
+        //设置消息预取的数量,前提要是手动确认的
+        containerFactory.setPrefetchCount(1);
         return containerFactory;
     }
 }

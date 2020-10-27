@@ -23,11 +23,11 @@ public class SceneListener {
 
         boolean isOk = placeAnOrder();
         if (isOk) {
-            //消息唯一标示
+            //消息唯一标示、是否批量确认
             channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
         } else {
             //批量
-            channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+            channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);//第三个参数:是否把消息返回原队列
             //单条
             //channel.basicReject(message.getMessageProperties().getDeliveryTag(),true);
         }
