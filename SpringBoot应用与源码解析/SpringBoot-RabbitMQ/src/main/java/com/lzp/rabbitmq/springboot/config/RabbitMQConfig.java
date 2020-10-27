@@ -10,6 +10,9 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author: luozhipeng
  * @description: 1、JavaConfig的方式配置启动rabbitMQ 2、yml的方式
@@ -37,6 +40,21 @@ public class RabbitMQConfig {
     @Bean
     public Queue queue() {
         return new Queue("directQueue", false);
+    }
+
+    /**
+     * todo 定义一个死信队列
+     */
+    @Bean
+    public Queue DeadLetterQueue() {
+        Map<String, Object> map = new HashMap<>();
+        //设置消息的过期时间
+        map.put("x-message-ttl", 10000);
+        //设置附带的死信交换机
+        map.put("x-dead-letter-exchange", "exchange.dlx");
+        //指定重定向的路由键,消息作废之后可以决定不需要更改它的路由键,如果需要就在这里指定
+        map.put("x-dead-letter-routing-key", "dead.order");
+        return new Queue("myDeadLetterQueue", true, false, false, map);
     }
 
     @Bean
