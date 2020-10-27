@@ -2,10 +2,8 @@ package com.lzp.rabbitmq.springboot.config;
 
 import com.lzp.rabbitmq.springboot.callback.MyConfirmCallBack;
 import com.lzp.rabbitmq.springboot.callback.MyReturnCallBack;
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.DirectExchange;
-import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.*;
+import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -57,5 +55,16 @@ public class RabbitMQConfig {
         //指定发送方确认模式的实现类
         rabbitTemplate.setConfirmCallback(new MyConfirmCallBack());
         return rabbitTemplate;
+    }
+
+    //todo 实例一个监听器的Container(容器)
+    @Bean
+    public SimpleRabbitListenerContainerFactory simpleRabbitListenerContainerFactory(ConnectionFactory connectionFactory) {
+        SimpleRabbitListenerContainerFactory containerFactory = new SimpleRabbitListenerContainerFactory();
+        //这个containerFactory就是我们自己配置的连接工厂直接注册进来
+        containerFactory.setConnectionFactory(connectionFactory);
+        //这边设置消息确认方式:自动确认=变为=手动确认
+        containerFactory.setAcknowledgeMode(AcknowledgeMode.MANUAL);
+        return containerFactory;
     }
 }
