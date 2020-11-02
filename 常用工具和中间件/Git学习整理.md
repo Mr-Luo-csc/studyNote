@@ -39,3 +39,11 @@ git fsck –lost-found
 ```bash
 git status
 ```
+- 修改 -m 提交信息
+```bash
+1.查看最近提交信息[单行显示]
+git log --oneline
+
+2.变更最新的message[vim编辑器语法]
+git commit --amend
+```
