@@ -3,9 +3,13 @@ package com.lzp.kafka.cousumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.OffsetAndMetadata;
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -60,6 +64,17 @@ public class MyKafkaConsumer {
                 consumer.close();
             }
         }
+
+        //todo 手动提交偏移量[不推荐,会出现消息丢失的问题]
+        /**
+         * 我这里就指定了test-topic这个主题下的分区1
+         * OffsetAndMetadata:第一个参数:为你要提交的偏移量 第二个参数:可以选择性的传入业务ID 可以拿来确定这次提交
+         * 这里我直接提交偏移量为0,那么会导致下个消费者或者说分区再均衡之后再来读取这个分区的数据会从第一条开始读取
+         * 指定偏移量提交,参数为map集合,key为指定的主题下的分区,value为你要提交的偏移量
+         */
+       /* Map<TopicPartition, OffsetAndMetadata> offset = new HashMap<>();
+        offset.put(new TopicPartition("test-topic", 1), new OffsetAndMetadata(0, "1"));
+        consumer.commitSync(offset);*/
 
     }
 
