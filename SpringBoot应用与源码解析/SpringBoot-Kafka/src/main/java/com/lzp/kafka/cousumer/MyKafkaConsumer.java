@@ -29,11 +29,35 @@ public class MyKafkaConsumer {
         //订阅主题
         consumer.subscribe(Collections.singletonList("test-topic"));
         //消费
-        while (true) {
+        /*while (true) {
             ConsumerRecords<String, String> poll = consumer.poll(500);
             for (ConsumerRecord<String, String> record : poll) {
                 //ConsumerRecords这是一个迭代器
                 System.out.println("消费消息: " + record);
+            }
+        }*/
+
+        //偏移量,偏移量提交
+        try {
+            while (true) {
+                ConsumerRecords<String, String> poll = consumer.poll(500);
+                for (ConsumerRecord<String, String> context : poll) {
+                    System.out.println("消息所在分区:" + context.partition() + "-消息的偏移量:" + context.offset() + "key:" + context.key() + "value:" + context.value());
+                }
+                //正常情况异步提交
+                consumer.commitAsync();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                //当程序中断时同步提交
+                consumer.commitSync();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                //关闭当前消费者 具体在下面有讲
+                consumer.close();
             }
         }
 
