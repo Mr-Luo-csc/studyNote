@@ -42,3 +42,42 @@ snappy压缩比没有gzip高,cpu占用率不是很高,性能也还行 <br/>
 >指定kafka一次发送请求在得到服务器回应之前,可发送的消息数量
 
 #### Kafka中消费者参数
+- fetch.min.bytes <br/>
+>该属性指定了消费者从服务器获取记录的最小字节数.broker在收到消费者的数据请求时,如果可用的数据量小
+ 于 fetch.min.bytes 指定的大小,那么它会等到有足够的可用数据时才把它返回给消费者.这样可以降低消费者和
+ broker的工作负载,因为它们在主题不是很活跃的时候（或者一天里的低谷时段）就不需要来来回回地处理消
+ 息.如果没有很多可用数据,但消费者的 CPU 使用率却很高,那么就需要把该属性的值设得比默认值大.如果消
+ 费者的数量比较多,把该属性的值设置得大一点可以降低 broker 的工作负载.默认值为1byte
+
+- fetch.max.wait.ms <br/>
+>todo
+
+- max.partition.fetch.bytes <br/>
+>该属性指定了服务器从每个分区里返回给消费者的最大字节数.默认值是:1MB
+
+- session.timeout.ms 和 heartbeat.interval.ms <br/>
+    - session.timeout.ms
+    >消费者多久没有发送心跳给服务器服务器则认为消费者死亡/退出消费者组 默认值:10000ms
+    - heartbeat.interval.ms
+    >消费者往kafka服务器发送心跳的间隔 一般设置为[session.timeout.ms]的三分之一 默认值:3000ms
+                                                                                                                                                             >
+- auto.offset.reset <br/>
+[当消费者本地没有对应分区的offset时,会根据此参数做不同的处理 默认值为:latest]
+    - earliest
+    >当各分区下有已提交的offset时,从提交的offset开始消费;无提交的offset时`从头开始消费`
+    - latest
+    >当各分区下有已提交的offset时,从提交的offset开始消费;无提交的offset时`消费新产生的该分区下的数据`
+    - none
+    >topic各分区都存在已提交的offset时,从offset后开始消费;只要有一个分区不存在已提交的offset`则抛出异常`
+
+- enable.auto.commit <br/>
+>todo
+
+- partition.assignment.strategy <br/>
+>todo
+
+- max.poll.records <br/>
+>单次调用 poll() 方法最多能够返回的记录条数 默认值:500
+
+- receive.buffer.bytes 和 send.buffer.bytes
+>todo
