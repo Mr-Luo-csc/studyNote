@@ -50,7 +50,11 @@ snappy压缩比没有gzip高,cpu占用率不是很高,性能也还行 <br/>
  费者的数量比较多,把该属性的值设置得大一点可以降低 broker 的工作负载.默认值为1byte
 
 - fetch.max.wait.ms <br/>
->todo
+>我们通过 fetch.min.bytes 告诉 Kafka,等到有足够的数据时才把它返回给消费者。而 feth.max.wait.ms 则用于指
+ 定 broker 的等待时间，默认是如果没有足够的数据流入Kafka，消费者获取最小数据量的要求就得不到满足，最终
+ 导致 500ms 的延迟。如果 fetch.max.wait.ms 被设为 100ms，并且 fetch.min.bytes 被设为 1MB，那么 Kafka 在
+ 收到消费者的请求后，要么返回 1MB 数据，要么在 100ms 后返回所有可用的数据，就看哪个条件先得到满足。
+ 默认值为500ms
 
 - max.partition.fetch.bytes <br/>
 >该属性指定了服务器从每个分区里返回给消费者的最大字节数.默认值是:1MB
