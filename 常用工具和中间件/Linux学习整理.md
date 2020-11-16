@@ -12,6 +12,10 @@ ps -ef | grep redis
 ```bash
 touch <fileName>
 ```
+- 查看日志输出文件
+```bash
+tail -f -n 500 <logFile-path>(/usr/logs/info/e.log)
+```
 
 ### 二、Linux常识
 
