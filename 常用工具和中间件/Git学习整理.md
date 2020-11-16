@@ -47,3 +47,7 @@ git log --oneline
 2.变更最新的message[vim编辑器语法]
 git commit --amend
 ```
+- 清除git本地缓存重新提交
+```bash
+git rm -r --cached .
+```
