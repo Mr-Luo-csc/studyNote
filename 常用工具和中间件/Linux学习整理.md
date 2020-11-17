@@ -16,6 +16,12 @@ touch <fileName>
 ```bash
 tail -f -n 500 <logFile-path>(/usr/logs/info/e.log)
 ```
+- 移动文件到指定目录
+```bash
+mv <文件名> <目标目录路径>
+例如:
+mv example.txt /usr/local
+```
 
 ### 二、Linux常识
 
