@@ -51,3 +51,7 @@ git commit --amend
 ```bash
 git rm -r --cached .
 ```
+- 拉取远程分支当作本地分支
+```bash
+git checkout -b 本地分支名 远程分支名<origin/name>
+```
