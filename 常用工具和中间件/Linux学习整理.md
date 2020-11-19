@@ -22,6 +22,10 @@ mv <文件名> <目标目录路径>
 例如:
 mv example.txt /usr/local
 ```
+- 刷新网络配置
+```bash
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed
+```
 
 ### 二、Linux常识
 
