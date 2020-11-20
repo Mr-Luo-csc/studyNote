@@ -64,6 +64,21 @@ docker exec -it 容器名 /bin/bash
 
 **使用Docker Compose运行多个容器**
 
+**常用命令(慎用还未尝试)**
+```bash
+1.构建镜像
+docker-compose build --no-cache
+
+2.后台运行镜像
+docker-compose up -d
+
+3.列出所有运行容器
+docker-compose ps
+
+4.查看服务日志输出
+docker-compose logs
+```
+
 ## 使用Docker时遇到的问题
 
 - 问题一:docker: Error response from daemon故障
