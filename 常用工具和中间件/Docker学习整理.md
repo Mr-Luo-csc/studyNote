@@ -60,6 +60,30 @@ docker exec -it 容器名 /bin/bash
 - none
 - container
 
+**常用命令**
+```bash
+1.将容器连接到网络
+docker network connect
+
+2.创建新的Docker网络.默认情况下,在Windows上会采用NAT驱动,在Linux上会采用Bridge驱动.可以使用 -d 参数指定驱动(网络类型)
+docker network create
+
+3.断开容器的网络
+docker network disconnect
+
+4.提供Docker网络的详细配置信息
+docker network inspect
+
+5.用于列出运行在本地Docker主机上的全部网络
+docker network ls
+
+6.删除Docker主机上全部未使用的网络
+docker network prune
+
+7.删除Docker主机上指定网络
+docker network rm
+```
+
 ## Docker-Compose
 
 **使用Docker Compose运行多个容器**
