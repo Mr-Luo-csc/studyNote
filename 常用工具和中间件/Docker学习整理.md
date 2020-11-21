@@ -101,6 +101,9 @@ docker-compose ps
 
 4.查看服务日志输出
 docker-compose logs
+
+5.yml文件中指定host的网络模式,配置如下参数:
+network_mode: host
 ```
 
 ## 使用Docker时遇到的问题
