@@ -29,7 +29,11 @@ docker system df
 ```
 查看挂载的[本地或者其它位置]占用内存
 ```bash
+1.查看挂载卷
 docker volume ls
+
+2.删除宿主机上无用的挂载卷
+docker volume prune
 ```
 查看容器的运行日志
 ```bash
