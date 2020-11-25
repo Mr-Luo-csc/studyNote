@@ -26,6 +26,10 @@ mv example.txt /usr/local
 ```bash
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed
 ```
+- 解压tar文件
+```bash
+tar  -zxvf <压缩文件名>
+```
 
 ### 二、Linux常识
 

@@ -55,3 +55,23 @@ git rm -r --cached .
 ```bash
 git checkout -b 本地分支名 远程分支名<origin/name>
 ```
+
+#### Git常用操作
+------
+- 创建一个新的空分支
+```bash
+1.创建新的空白分支
+git checkout --orphan <新的分支名>
+
+2.会清除所有git clone下的所有文件,只剩.git
+git clean -d -fx
+
+3.清除所有git文件历史,为了空白分支
+git rm -rf .
+
+4.添加提交信息
+git commit -m "提交信息"
+
+5.推送远程分支
+git push origin <新的分支名>
+```
