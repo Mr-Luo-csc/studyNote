@@ -30,6 +30,17 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flu
 ```bash
 tar  -zxvf <压缩文件名>
 ```
+- mac添加网络配置
+```bash
+1.必须是root用户
+must be root to alter routing table
+
+2.mac切换root用户
+sudo su
+
+3.添加路由
+route -n add -net 172.10.0.0 -netmask 255.255.0.0 192.168.208.100
+```
 
 ### 二、Linux常识
 
