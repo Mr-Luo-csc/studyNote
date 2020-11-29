@@ -88,6 +88,17 @@ docker network prune
 docker network rm
 ```
 
+**思考:不同网桥下的容器间能通信吗?**
+1. 先手动建立一个 bridge 模式的新网桥, docker network create --driver bridge --subnet=172.18.0.0/16 --gateway=172.18.0.1 new_bridge
+2. docker network ls 可以查看 docker 下现在的网络模式(新加的那个)
+3. docker run --name test1 -ti --net=new_bridge 镜像名 `用新网桥的一个容器 test1`
+4. docker run --name test2 -ti --net=bridge 镜像名 `用 docker 默认网桥的一个容器test2`
+5. 进入到其中一个容器, ip a 查看网卡, ping 另一个容器IP  
+6. 进另一个容器,同上. 两个容器IP段不一样. 不同网桥,会创建不同网段的虚拟网卡给容器
+7. 不同网桥下的容器间不能ping通,在于docker设计时候就隔离了不同网桥
+8. docker network connect new_bridge test2   //为test2容器添加一块 new_bridge 的虚拟网卡,这样test2上会创建一个新的虚拟网卡,网段就是新网桥设置的
+9. 如此就能互相ping通
+
 ## Docker-Compose
 
 **使用Docker Compose运行多个容器**
