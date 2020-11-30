@@ -47,6 +47,10 @@ docker inspect
 ```bash
 docker exec -it 容器名 /bin/bash
 ```
+运行容器时,挂载目录
+```bash
+docker run --name test -d -P <映射容器中的所有端口到宿主机,宿主机随机分配端口> -v /usr/local/data:/var/data <宿主机目录:容器目录> test:v1
+```
 
 ## DockerFile常用指令
 
@@ -89,14 +93,14 @@ docker network rm
 ```
 
 **思考:不同网桥下的容器间能通信吗?**
-1. 先手动建立一个 bridge 模式的新网桥, docker network create --driver bridge --subnet=172.18.0.0/16 --gateway=172.18.0.1 new_bridge
-2. docker network ls 可以查看 docker 下现在的网络模式(新加的那个)
-3. docker run --name test1 -ti --net=new_bridge 镜像名 `用新网桥的一个容器 test1`
-4. docker run --name test2 -ti --net=bridge 镜像名 `用 docker 默认网桥的一个容器test2`
-5. 进入到其中一个容器, ip a 查看网卡, ping 另一个容器IP  
-6. 进另一个容器,同上. 两个容器IP段不一样. 不同网桥,会创建不同网段的虚拟网卡给容器
+1. 先手动建立一个bridge模式的新网桥,docker network create --driver bridge --subnet=172.18.0.0/16 --gateway=172.18.0.1 new_bridge
+2. docker network ls 可以查看docker下现在的网络模式(新加的那个)
+3. docker run --name test1 -ti --net=new_bridge 镜像名 `用新网桥的一个容器test1`
+4. docker run --name test2 -ti --net=bridge 镜像名 `用docker默认网桥的一个容器test2`
+5. 进入到其中一个容器,ip a查看网卡,ping另一个容器IP
+6. 进另一个容器,同上.两个容器IP段不一样.不同网桥,会创建不同网段的虚拟网卡给容器
 7. 不同网桥下的容器间不能ping通,在于docker设计时候就隔离了不同网桥
-8. docker network connect new_bridge test2   //为test2容器添加一块 new_bridge 的虚拟网卡,这样test2上会创建一个新的虚拟网卡,网段就是新网桥设置的
+8. docker network connect new_bridge test2 //为test2容器添加一块new_bridge的虚拟网卡,这样test2上会创建一个新的虚拟网卡,网段就是新网桥设置的
 9. 如此就能互相ping通
 
 ## Docker-Compose
