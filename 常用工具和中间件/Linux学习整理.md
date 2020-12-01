@@ -1,36 +1,40 @@
 ### 一、常用Linux命令
 
-- 当前用户根目录
+当前用户根目录
 ```bash
- cd ～
+cd ～
 ```
-- 查看命令
+mac顶层目录
+```bash
+cd /
+```
+查看命令
 ```bash
 ps -ef | grep redis
 ```
-- 创建一个新的空白文件
+创建一个新的空白文件
 ```bash
 touch <fileName>
 ```
-- 查看日志输出文件
+查看日志输出文件
 ```bash
 tail -f -n 500 <logFile-path>(/usr/logs/info/e.log)
 ```
-- 移动文件到指定目录
+移动文件到指定目录
 ```bash
 mv <文件名> <目标目录路径>
 例如:
 mv example.txt /usr/local
 ```
-- 刷新网络配置
+刷新网络配置
 ```bash
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed
 ```
-- 解压tar文件
+解压tar文件
 ```bash
 tar  -zxvf <压缩文件名>
 ```
-- mac添加网络配置
+mac添加网络配置
 ```bash
 1.必须是root用户
 must be root to alter routing table
