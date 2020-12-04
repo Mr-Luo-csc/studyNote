@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @author: luozhipeng
- * @description: 配置拦截器
+ * @description: 配置拦截器, 走拦截器是有顺序的
  * @data: 2020-12-04
  **/
 @Configuration
