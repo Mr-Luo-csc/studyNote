@@ -1,5 +1,6 @@
 package com.lzp.interceptor.config;
 
+import com.lzp.interceptor.auth.AdminInterceptor;
 import com.lzp.interceptor.auth.LogInterceptor;
 import com.lzp.interceptor.auth.OldLoginInterceptor;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +19,12 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-        registry.addInterceptor(new OldLoginInterceptor()).addPathPatterns("/admin/oldLogin");
+        registry.addInterceptor(new AdminInterceptor())
+                .addPathPatterns("/admin/*")
+                .excludePathPatterns("/admin/oldLogin");
+
+        registry.addInterceptor(new OldLoginInterceptor())
+                .addPathPatterns("/admin/oldLogin");
 
         registry.addInterceptor(new LogInterceptor());
 
