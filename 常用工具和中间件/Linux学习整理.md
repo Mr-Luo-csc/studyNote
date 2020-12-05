@@ -45,6 +45,10 @@ sudo su
 3.添加路由
 route -n add -net 172.10.0.0 -netmask 255.255.0.0 192.168.208.100
 ```
+命令查看端口
+```bash
+netstat -ntlp
+```
 
 ### 二、Linux常识
 
