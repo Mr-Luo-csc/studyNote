@@ -49,6 +49,10 @@ route -n add -net 172.10.0.0 -netmask 255.255.0.0 192.168.208.100
 ```bash
 netstat -ntlp
 ```
+重启网卡
+```bash
+service network restart
+```
 
 ### 二、Linux常识
 
