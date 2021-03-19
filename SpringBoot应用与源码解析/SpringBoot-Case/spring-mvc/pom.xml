@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>8.5.57</version>
+            <version>8.5.61</version>
         </dependency>
 
         <!--版本要一致,不然会有jar冲突-->
