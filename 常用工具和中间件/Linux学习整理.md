@@ -72,6 +72,11 @@ export PATH=$homebrew:$PATH
 
 3.使文件生效
 source ~/.bash_profile
+
+标注:(如果homebrew有指定目录的话,加上即可)
+1.配置文件在/usr/local/etc中
+2.安装文件在/usr/local/Cellar中
+3.二进制可执行程序的软连接在/usr/local/bin中
 ```
 
 ### 二、Linux常识
