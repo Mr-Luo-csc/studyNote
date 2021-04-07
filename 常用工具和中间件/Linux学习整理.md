@@ -53,6 +53,26 @@ netstat -ntlp
 ```bash
 service network restart
 ```
+mac终端配置重新生效
+```bash
+source ~/.bash_profile
+```
+mac命令查看某服务是否安装`标注:新版本的Xcode已经不支持SVN了`
+```bash
+which svn
+```
+mac安装homebrew安装到指定目录
+```bash
+1.安装到/usr/local/homebrew
+mkdir homebrew && curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew
+
+2.配置环境变量,修改(.bash_profile)这个文件,添加以下配置:
+homebrew=/usr/local/homebrew/bin:/usr/local/homebrew/sbin
+export PATH=$homebrew:$PATH
+
+3.使文件生效
+source ~/.bash_profile
+```
 
 ### 二、Linux常识
 
