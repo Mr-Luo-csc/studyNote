@@ -78,6 +78,14 @@ source ~/.bash_profile
 2.安装文件在/usr/local/Cellar中
 3.二进制可执行程序的软连接在/usr/local/bin中
 ```
+mac下查看目录下的指定后缀名的文件
+```bash
+1. 来查看bin目录下的shell脚本
+ls -la *.sh
+2. -rwxr 代表有执行操作权限; -rw 则表示没有操作权限
+3. bin目录查看shell脚本命令授权
+chmod -R u+x ./bin
+```
 
 ### 二、Linux常识
 

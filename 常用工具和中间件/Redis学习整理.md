@@ -40,6 +40,21 @@ flushALL
 
 /usr/local/bin/redis-cli -h<ip> -p<port> -c<表示使用集群的方式连接>
 ```
+- redis过期时间相关命令
+```bash
+设置一个key在seconds秒后失效
+EXPIRE key "seconds"
+
+设置一个key在milliseconds毫秒后失效
+PEXPIRE key "milliseconds"
+
+获取key的过期时间,秒,[如果key是永久的,返回-1;如果key不存在或者已过期,返回-2]
+TTL key
+
+获取key的过期时间,毫秒
+PTTL key
+```
+
 ------
 ### Redis五大数据类型
 - String

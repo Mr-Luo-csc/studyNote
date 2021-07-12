@@ -55,6 +55,22 @@ git rm -r --cached .
 ```bash
 git checkout -b 本地分支名 远程分支名<origin/name>
 ```
+- 本地分支关联远程分支
+```bash
+git branch --set-upstream-to=origin/master master
+```
+- 强制回退到指定版本
+```bash
+git reset –hard 版本号<versionId>
+```
+- git合并某一次提交
+```bash
+1.查看历史提交的commit_id
+git reflog
+
+2.合并提交
+git cherry-pick commit_id
+```
 
 #### Git常用操作
 ------
