@@ -8,6 +8,11 @@ mac顶层目录
 ```bash
 cd /
 ```
+查看磁盘空间/查看文件目录占用空间的大小
+```bash
+df -h / du -h --max-depth=1
+```
+
 查看命令
 ```bash
 ps -ef | grep redis
