@@ -28,7 +28,7 @@ docker container ls
 ```
 查看docker占用的空间
 ```bash
-docker system df
+docker system df / docker system df -v
 ```
 查看挂载的[本地或者其它位置]占用内存
 ```bash
