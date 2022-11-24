@@ -54,6 +54,13 @@ TTL key
 获取key的过期时间,毫秒
 PTTL key
 ```
+- 查看mysql事务和锁的情况
+```mysql
+show processlist;
+select * from information_schema.innodb_trx; -- 搜索的数据中找到`trx_mysql_thread_id`列中的线程id,kill id
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;
+```
 
 ------
 ### Redis五大数据类型
